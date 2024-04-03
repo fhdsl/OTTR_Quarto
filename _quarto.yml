@@ -1,0 +1,38 @@
+project:
+  type: book
+
+book:
+  title: "Example Quarto Book"
+  author: "Howard Baek"
+  date: "4/3/2024"
+  favicon: favicon.ico
+  page-navigation: true
+  search: true
+  reader-mode: true
+  
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+  navbar: 
+    search: true
+  
+  page-footer:
+    left: |
+      This book was built with <a href="https://quarto.org/">Quarto</a> by 
+      The Fred Hutch Data Science Lab
+    center: |
+      All illustrations <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY. </a>
+      <br>
+      All other materials <a href= "https://creativecommons.org/licenses/by/4.0/"> CC-BY </a> unless noted otherwise.
+    right: |
+     Please provide feedback.
+  
+  
+
+bibliography: references.bib
+
+format:
+  html:
+    css: style.css
