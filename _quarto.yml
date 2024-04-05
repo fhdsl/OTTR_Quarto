@@ -27,11 +27,15 @@ book:
       All other materials <a href= "https://creativecommons.org/licenses/by/4.0/"> CC-BY </a> unless noted otherwise.
     right: |
      Please provide feedback <a href= "https://docs.google.com/forms/d/e/1FAIpQLSfBvVELBg8lcynKj0TrzMlov1zil-Sbkh9VhMKRcSpeo1xo6g/viewform"> here </a>
-  
-  
 
 bibliography: references.bib
 
 format:
   html:
     css: style.css
+knitr:
+  opts_chunk:
+    fig.path: "resources/images/figure/"
+
+
+    
