@@ -2,7 +2,7 @@ project:
   type: book
 
 book:
-  title: "Example Quarto Book"
+  title: "Quarto Based OTTR Course"
   author: "Howard Baek"
   date: "4/3/2024"
   favicon: favicon.ico
