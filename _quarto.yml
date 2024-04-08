@@ -18,19 +18,22 @@ book:
     - intro.qmd
     - summary.qmd
     - references.qmd
-  navbar: 
+  navbar:
+    background: white
+    foreground: black
+    logo: /img/logo.jpeg
     search: true
   
   page-footer:
     left: |
-      This book was built with <a href="https://quarto.org/">Quarto</a> by 
-      <a href="https://hutchdatascience.org/">The Fred Hutch Data Science Lab</a>
+      This book was built with <a href="https://quarto.org/" style="color: #fff;">Quarto</a> by 
+      <a href="https://hutchdatascience.org/" style="color: #fff;">The Fred Hutch Data Science Lab</a>
     center: |
-      All illustrations <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY. </a>
+      All illustrations <a href="https://creativecommons.org/licenses/by/4.0/" style="color: #fff;">CC-BY. </a>
       <br>
-      All other materials <a href= "https://creativecommons.org/licenses/by/4.0/"> CC-BY </a> unless noted otherwise.
+      All other materials <a href= "https://creativecommons.org/licenses/by/4.0/" style="color: #fff;"> CC-BY </a> unless noted otherwise.
     right: |
-     Please provide feedback <a href= "https://docs.google.com/forms/d/e/1FAIpQLSfBvVELBg8lcynKj0TrzMlov1zil-Sbkh9VhMKRcSpeo1xo6g/viewform"> here </a>
+     Please provide feedback <a href= "https://docs.google.com/forms/d/e/1FAIpQLSfBvVELBg8lcynKj0TrzMlov1zil-Sbkh9VhMKRcSpeo1xo6g/viewform" style="color: #fff;"> here </a>
 
 bibliography: references.bib
 

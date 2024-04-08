@@ -1,24 +1,31 @@
+/* Imports fonts from Google Fonts (Abril Fatface, Karla, and Lora) with different weights and styles */
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Karla:400,400i,700,700i|Lora:400,400i,700,700i&display=swap');
 
+/* Styles for paragraph captions, setting their color and margin */
 p.caption {
   color: #777;
   margin-top: 10px;
 }
+
+/* Styles for paragraph code, which inherit white-space property */
 p code {
   white-space: inherit;
 }
+
+/* Styles for pre elements to prevent words from breaking unnaturally */
 pre {
   word-break: normal;
   word-wrap: normal;
 }
+/* Inherits the white-space property for consistent code formatting */
 pre code {
   white-space: inherit;
 }
 
-/*---------------Hero Image------------------*/
 
-/* next 3 rules are for setting large image at top of each page and pushing down the book content to appear beneath the image */
+/* Next 3 rules are for setting wide image at the top of each page and pushing down the book content to appear beneath the image */
 
+/* Styles for a large image container at the top of each page */
 .hero-image-container {
   position: absolute;
   top: 0;
@@ -29,19 +36,21 @@ pre code {
   /*background-color: #193a5c;*/
 }
 
+/* Styles the .hero-image itself to cover a specific width and height */
 .hero-image {
   width: 100%;
   height: 80%;
   /*object-fit: cover;*/
 }
 
+/* Adds padding to .page-inner to ensure content does not overlap with the hero image. */
 .page-inner {
   padding-top: 140px !important;
 }
 
 
 /* ------------Links------------------ */
-
+/* Sets the color for links within a specific context */
 .book .book-body .page-wrapper .page-inner section.normal a {
   color: #68ace5;
 }
@@ -83,7 +92,7 @@ h1, h2, h3, h4 {
 
 
 /*----------DROP CAPS--------------*/
-
+/* Styles the first letter of the first paragraph under a level 1 header as a drop cap */
 
 /*p:nth-child(2):first-letter {   /* /* DROP-CAP FOR FIRST P BENEATH EACH H1 OR H2*/ /*
   color: #3fb5bd;
@@ -264,7 +273,7 @@ div.notice{
   background-size: 70px;
   background-position: 15px center;
   background-color: #e8ebee;
-  background-image: url("../assets/box_images/note.png");
+  background-image: url("img/box_images/note.png");
 }
 
 
@@ -274,7 +283,7 @@ div.warning{
   background-size: 70px;
   background-position: 15px center;
   background-color: #e8ebee;
-  background-image: url("../assets/box_images/warning.png");
+  background-image: url("img/box_images/warning.png");
 }
 
 div.github{
@@ -283,7 +292,7 @@ div.github{
   background-size: 70px;
   background-position: 15px center;
   background-color: #e8ebee;
-  background-image: url("../assets/box_images/github.png");
+  background-image: url("img/box_images/github.png");
 }
 
 div.dictionary{
@@ -292,7 +301,7 @@ div.dictionary{
   background-size: 70px;
   background-position: 15px center;
   background-color: #e8ebee;
-  background-image: url("../assets/box_images/dictionary.png");
+  background-image: url("img/box_images/dictionary.png");
 }
 
 div.reflection{
@@ -301,7 +310,7 @@ div.reflection{
   background-size: 90px;
   background-position: 15px center;
   background-color: #e8ebee;
-  background-image: url("../assets/box_images/thinking_face.png");
+  background-image: url("img/box_images/thinking_face.png");
 }
 
 div.wip{
@@ -310,7 +319,7 @@ div.wip{
   background-size: 70px;
   background-position: 15px center;
   background-color: #f4d03f;
-  background-image: url("../assets/box_images/under_construction.png");
+  background-image: url("img/box_images/under_construction.png");
 }
 
 /* .book .book-body .page-wrapper .page-inner section.normal is needed
@@ -429,10 +438,24 @@ a.anchor:hover {
   margin: 0 !important; /* makes space above and below symmetrical*/
 }
 
-/* Footer */
 
+/* Footer */
 .footer {
   font-family: "Lora", serif;
   font-size: .85em;
   color: #193a5c;
+}
+
+/* Navbar Footer */
+.nav-footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: #1B365D;
+    color: #fff !important;
 }
