@@ -6,9 +6,12 @@ book:
   title: "Quarto Based OTTR Course"
   author: "Howard Baek"
   date: "4/3/2024"
-  favicon: favicon.ico
+  favicon: img/favicon.ico
+  
   page-navigation: true
   search: true
+  repo-url: https://github.com/fhdsl/ottr
+  repo-actions: [edit] 
   
   chapters:
     - index.qmd
@@ -21,7 +24,7 @@ book:
   page-footer:
     left: |
       This book was built with <a href="https://quarto.org/">Quarto</a> by 
-      The Fred Hutch Data Science Lab
+      <a href="https://hutchdatascience.org/">The Fred Hutch Data Science Lab</a>
     center: |
       All illustrations <a href="https://creativecommons.org/licenses/by/4.0/">CC-BY. </a>
       <br>
@@ -37,6 +40,7 @@ format:
 knitr:
   opts_chunk:
     fig.path: "resources/images/figure/"
+
 
 
     
