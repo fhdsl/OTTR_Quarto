@@ -59,7 +59,7 @@ How to include a Google slide. It's simplest to use the `ottrpal` package:
 #| fig-alt: "Major point!! example image"
 #| echo: false
 #| out-width: "100%"
-ottrpal::include_slide("https://docs.google.com/presentation/d/1YmwKdIy9BeQ3EShgZhvtb3MgR8P6iDX4DfFD65W_gdQ/edit#slide=id.gcc4fbee202_0_141")
+ottrpal::include_slide("https://docs.google.com/presentation/d/1Dw_rBb1hySN_76xh9-x5J2dWF_das9BAUjQigf2fN-E/edit#slide=id.g252f18e2576_1_0")
 ```
 
 But if you have the slide or some other image locally downloaded you can also use HTML like this: 
