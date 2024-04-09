@@ -44,6 +44,7 @@ format:
     css: style.css
     link-external-newwindow: true
     linkcolor: "#00C1D5"
+    image: img/favicon.ico
 knitr:
   opts_chunk:
     fig.path: "resources/images/figure/"
