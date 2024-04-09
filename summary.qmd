@@ -124,15 +124,6 @@ knitr::include_url("https://yihui.org")
 <iframe src="https://yihui.org" width="672" height="400px"></iframe>
 
 
-## Citation examples
-
-We can put citations at the end of a sentence like this [@rmarkdown2021].
-Or multiple citations [@rmarkdown2021, @Xie2018].
-
-but they need a ; separator [@rmarkdown2021; @Xie2018].
-
-In text, we can put citations like this @rmarkdown2021.
-
 ## Stylized boxes
 
 Occasionally, you might find it useful to emphasize a particular piece of information. To help you do so, we have provided css code and images (no need for you to worry about that!) to create the following stylized boxes.
@@ -141,7 +132,7 @@ You can use these boxes in your course with either of two options: using HTML co
 
 ### Using `rmarkdown` container syntax
 
-The `rmarkdown` package allows for a different syntax to be converted to the HTML that you just saw and also allows for conversion to LaTeX. See the [Bookdown](https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html) documentation for more information [@Xie2020]. Note that Bookdown uses Pandoc.
+The `rmarkdown` package allows for a different syntax to be converted to the HTML that you just saw and also allows for conversion to LaTeX. See the [Bookdown](https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html) documentation for more information. Note that Bookdown uses Pandoc.
 
 
 ```
