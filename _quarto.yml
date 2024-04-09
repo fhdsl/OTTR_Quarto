@@ -34,13 +34,16 @@ book:
       <br>
       All other materials <a href= "https://creativecommons.org/licenses/by/4.0/" style="color: #fff;"> CC-BY </a> unless noted otherwise.
     right: |
-     Please provide feedback <a href= "https://docs.google.com/forms/d/e/1FAIpQLSfBvVELBg8lcynKj0TrzMlov1zil-Sbkh9VhMKRcSpeo1xo6g/viewform" style="color: #fff;"> here </a>
+     Please take a moment to share your feedback with us by filling out this 
+     <a href= "https://docs.google.com/forms/d/e/1FAIpQLSfBvVELBg8lcynKj0TrzMlov1zil-Sbkh9VhMKRcSpeo1xo6g/viewform" style="color: #fff;"> Google Form </a>.
 
 bibliography: references.bib
 
 format:
   html:
     css: style.css
+    link-external-newwindow: true
+    linkcolor: "#00C1D5"
 knitr:
   opts_chunk:
     fig.path: "resources/images/figure/"
