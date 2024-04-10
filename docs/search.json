@@ -30,136 +30,6 @@
     ]
   },
   {
-    "objectID": "summary.html",
-    "href": "summary.html",
-    "title": "\n2  A new chapter\n",
-    "section": "",
-    "text": "2.1 Learning Objectives\nEvery chapter also needs Learning objectives.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>A new chapter</span>"
-    ]
-  },
-  {
-    "objectID": "summary.html#libraries",
-    "href": "summary.html#libraries",
-    "title": "\n2  A new chapter\n",
-    "section": "\n2.2 Libraries",
-    "text": "2.2 Libraries\nFor this chapter, we’ll need the following packages attached:\n*Remember to add any additional packages you need to your course’s own docker image.\n\nlibrary(magrittr)",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>A new chapter</span>"
-    ]
-  },
-  {
-    "objectID": "summary.html#topic-of-section",
-    "href": "summary.html#topic-of-section",
-    "title": "\n2  A new chapter\n",
-    "section": "\n2.3 Topic of Section",
-    "text": "2.3 Topic of Section\nYou can write all your text in sections like this, using ## to indicate a new header. you can use additional pound symbols to create lower levels of headers.\nSee here for additional general information about how you can format text within R Markdown files. In addition, see here for more in depth and advanced options.\n\n2.3.1 Subtopic\nHere’s a subheading (using three pound symbols) and some text in this subsection!",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>A new chapter</span>"
-    ]
-  },
-  {
-    "objectID": "summary.html#code-examples",
-    "href": "summary.html#code-examples",
-    "title": "\n2  A new chapter\n",
-    "section": "\n2.4 Code examples",
-    "text": "2.4 Code examples\nYou can demonstrate code like this:\n\noutput_dir &lt;- file.path(\"resources\", \"code_output\")\nif (!dir.exists(output_dir)) {\n  dir.create(output_dir)\n}\n\nAnd make plots too:\n\nhist_plot &lt;- hist(iris$Sepal.Length)\n\n\n\n\n\n\n\nYou can also save these plots to file:\n\npng(file.path(output_dir, \"test_plot.png\"))\nhist_plot\n\n$breaks\n[1] 4.0 4.5 5.0 5.5 6.0 6.5 7.0 7.5 8.0\n\n$counts\n[1]  5 27 27 30 31 18  6  6\n\n$density\n[1] 0.06666667 0.36000000 0.36000000 0.40000000 0.41333333 0.24000000 0.08000000\n[8] 0.08000000\n\n$mids\n[1] 4.25 4.75 5.25 5.75 6.25 6.75 7.25 7.75\n\n$xname\n[1] \"iris$Sepal.Length\"\n\n$equidist\n[1] TRUE\n\nattr(,\"class\")\n[1] \"histogram\"\n\ndev.off()\n\nquartz_off_screen \n                2",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>A new chapter</span>"
-    ]
-  },
-  {
-    "objectID": "summary.html#image-example",
-    "href": "summary.html#image-example",
-    "title": "\n2  A new chapter\n",
-    "section": "\n2.5 Image example",
-    "text": "2.5 Image example\nHow to include a Google slide. It’s simplest to use the ottrpal package:\n\n\n\n\n\n\n\n\nBut if you have the slide or some other image locally downloaded you can also use HTML like this:",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>A new chapter</span>"
-    ]
-  },
-  {
-    "objectID": "summary.html#video-examples",
-    "href": "summary.html#video-examples",
-    "title": "\n2  A new chapter\n",
-    "section": "\n2.6 Video examples",
-    "text": "2.6 Video examples\nYou may also want to embed videos in your course. If alternatively, you just want to include a link you can do so like this:\nCheck out this link to a video using markdown syntax.\n\n2.6.1 Using knitr\n\nTo embed videos in your course, you can use knitr::include_url() like this: Note that you should use echo=FALSE in the code chunk because we don’t want the code part of this to show up. If you are unfamiliar with how R Markdown code chunks work, read this.\n\n\n\n\n\n2.6.2 Using HTML\n\n\n\n2.6.3 Using knitr\n\n\n\n\n\n\n2.6.4 Using HTML",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>A new chapter</span>"
-    ]
-  },
-  {
-    "objectID": "summary.html#website-examples",
-    "href": "summary.html#website-examples",
-    "title": "\n2  A new chapter\n",
-    "section": "\n2.7 Website Examples",
-    "text": "2.7 Website Examples\nYet again you can use a link to a website like so:\nA Website\nYou might want to have users open a website in a new tab by default, especially if they need to reference both the course and a resource at once.\nA Website\nOr, you can embed some websites.\n\n2.7.1 Using knitr\n\nThis works:\n\n\n\n\n\n2.7.2 Using HTML",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>A new chapter</span>"
-    ]
-  },
-  {
-    "objectID": "summary.html#stylized-boxes",
-    "href": "summary.html#stylized-boxes",
-    "title": "\n2  A new chapter\n",
-    "section": "\n2.8 Stylized boxes",
-    "text": "2.8 Stylized boxes\nOccasionally, you might find it useful to emphasize a particular piece of information. To help you do so, we have provided css code and images (no need for you to worry about that!) to create the following stylized boxes.\nYou can use these boxes in your course with either of two options: using HTML code or Pandoc syntax.\n\n2.8.1 Using rmarkdown container syntax\nThe rmarkdown package allows for a different syntax to be converted to the HTML that you just saw and also allows for conversion to LaTeX. See the Bookdown documentation for more information. Note that Bookdown uses Pandoc.\n::: {.notice}\nNote using rmarkdown syntax.\n\n:::\n\nNote using rmarkdown syntax.\n\nAs an example you might do something like this:\n\nPlease click on the subsection headers in the left hand navigation bar (e.g., 2.1, 4.3) a second time to expand the table of contents and enable the scroll_highlight feature (see more)\n\n\n2.8.2 Using HTML\nTo add a warning box like the following use:\n\nFollowed by the text you want inside\n\nThis will create the following:\n\nFollowed by the text you want inside\n\nHere is a &lt;div class = \"warning\"&gt; box:\n\nNote text\n\nHere is a &lt;div class = \"github\"&gt; box:\n\nGitHub text\n\nHere is a &lt;div class = \"dictionary\"&gt; box:\n\ndictionary text\n\nHere is a &lt;div class = \"reflection\"&gt; box:\n\nreflection text\n\nHere is a &lt;div class = \"wip\"&gt; box:\n\nWork in Progress text",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>A new chapter</span>"
-    ]
-  },
-  {
-    "objectID": "summary.html#dropdown-summaries",
-    "href": "summary.html#dropdown-summaries",
-    "title": "\n2  A new chapter\n",
-    "section": "\n2.9 Dropdown summaries",
-    "text": "2.9 Dropdown summaries\n\nYou can hide additional information in a dropdown menu\n\nHere’s more words that are hidden.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>A new chapter</span>"
-    ]
-  },
-  {
-    "objectID": "summary.html#print-out-session-info",
-    "href": "summary.html#print-out-session-info",
-    "title": "\n2  A new chapter\n",
-    "section": "\n2.10 Print out session info",
-    "text": "2.10 Print out session info\nYou should print out session info when you have code for reproducibility purposes.\n\ndevtools::session_info()\n\n─ Session info ───────────────────────────────────────────────────────────────\n setting  value\n version  R version 4.3.2 (2023-10-31)\n os       macOS Ventura 13.4.1\n system   aarch64, darwin20\n ui       X11\n language (EN)\n collate  en_US.UTF-8\n ctype    en_US.UTF-8\n tz       America/Los_Angeles\n date     2024-04-09\n pandoc   3.1.1 @ /Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools/ (via rmarkdown)\n\n─ Packages ───────────────────────────────────────────────────────────────────\n package     * version date (UTC) lib source\n askpass       1.2.0   2023-09-03 [1] CRAN (R 4.3.0)\n cachem        1.0.8   2023-05-01 [1] CRAN (R 4.3.0)\n cli           3.6.2   2023-12-11 [1] CRAN (R 4.3.1)\n curl          5.2.1   2024-03-01 [1] CRAN (R 4.3.1)\n devtools      2.4.5   2022-10-11 [1] CRAN (R 4.3.0)\n digest        0.6.34  2024-01-11 [1] CRAN (R 4.3.1)\n ellipsis      0.3.2   2021-04-29 [1] CRAN (R 4.3.0)\n evaluate      0.23    2023-11-01 [1] CRAN (R 4.3.1)\n fansi         1.0.6   2023-12-08 [1] CRAN (R 4.3.1)\n fastmap       1.1.1   2023-02-24 [1] CRAN (R 4.3.0)\n fs            1.6.3   2023-07-20 [1] CRAN (R 4.3.0)\n glue          1.7.0   2024-01-09 [1] CRAN (R 4.3.1)\n highr         0.10    2022-12-22 [1] CRAN (R 4.3.0)\n hms           1.1.3   2023-03-21 [1] CRAN (R 4.3.0)\n htmltools     0.5.7   2023-11-03 [1] CRAN (R 4.3.1)\n htmlwidgets   1.6.4   2023-12-06 [1] CRAN (R 4.3.1)\n httpuv        1.6.13  2023-12-06 [1] CRAN (R 4.3.1)\n httr          1.4.7   2023-08-15 [1] CRAN (R 4.3.0)\n jsonlite      1.8.8   2023-12-04 [1] CRAN (R 4.3.1)\n knitr         1.45    2023-10-30 [1] CRAN (R 4.3.1)\n later         1.3.2   2023-12-06 [1] CRAN (R 4.3.1)\n lifecycle     1.0.4   2023-11-07 [1] CRAN (R 4.3.1)\n magrittr    * 2.0.3   2022-03-30 [1] CRAN (R 4.3.0)\n memoise       2.0.1   2021-11-26 [1] CRAN (R 4.3.0)\n mime          0.12    2021-09-28 [1] CRAN (R 4.3.0)\n miniUI        0.1.1.1 2018-05-18 [1] CRAN (R 4.3.0)\n openssl       2.1.1   2023-09-25 [1] CRAN (R 4.3.1)\n ottrpal       1.2.1   2024-04-05 [1] local\n pillar        1.9.0   2023-03-22 [1] CRAN (R 4.3.0)\n pkgbuild      1.4.3   2023-12-10 [1] CRAN (R 4.3.1)\n pkgconfig     2.0.3   2019-09-22 [1] CRAN (R 4.3.0)\n pkgload       1.3.3   2023-09-22 [1] CRAN (R 4.3.1)\n profvis       0.3.8   2023-05-02 [1] CRAN (R 4.3.0)\n promises      1.2.1   2023-08-10 [1] CRAN (R 4.3.0)\n purrr         1.0.2   2023-08-10 [1] CRAN (R 4.3.0)\n R6            2.5.1   2021-08-19 [1] CRAN (R 4.3.0)\n Rcpp          1.0.12  2024-01-09 [1] CRAN (R 4.3.1)\n readr         2.1.5   2024-01-10 [1] CRAN (R 4.3.1)\n remotes       2.4.2.1 2023-07-18 [1] CRAN (R 4.3.0)\n rlang         1.1.3   2024-01-10 [1] CRAN (R 4.3.1)\n rmarkdown     2.25    2023-09-18 [1] CRAN (R 4.3.1)\n rstudioapi    0.15.0  2023-07-07 [1] CRAN (R 4.3.0)\n sessioninfo   1.2.2   2021-12-06 [1] CRAN (R 4.3.0)\n shiny         1.8.0   2023-11-17 [1] CRAN (R 4.3.1)\n stringi       1.8.3   2023-12-11 [1] CRAN (R 4.3.1)\n stringr       1.5.1   2023-11-14 [1] CRAN (R 4.3.1)\n tibble        3.2.1   2023-03-20 [1] CRAN (R 4.3.0)\n tzdb          0.4.0   2023-05-12 [1] CRAN (R 4.3.0)\n urlchecker    1.0.1   2021-11-30 [1] CRAN (R 4.3.0)\n usethis       2.2.2   2023-07-06 [1] CRAN (R 4.3.0)\n utf8          1.2.4   2023-10-22 [1] CRAN (R 4.3.1)\n vctrs         0.6.5   2023-12-01 [1] CRAN (R 4.3.1)\n xfun          0.42    2024-02-08 [1] CRAN (R 4.3.1)\n xml2          1.3.6   2023-12-04 [1] CRAN (R 4.3.1)\n xtable        1.8-4   2019-04-21 [1] CRAN (R 4.3.0)\n yaml          2.3.8   2023-12-11 [1] CRAN (R 4.3.1)\n\n [1] /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library\n\n──────────────────────────────────────────────────────────────────────────────",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>A new chapter</span>"
-    ]
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "References",
-    "section": "",
-    "text": "Shannon, C. E. (1948). A Mathematical Theory of Communication. Bell System Technical Journal, 27(3), 379–423. https://ieeexplore.ieee.org/document/6773024\nTuring, A. M. (1950). Computing Machinery and Intelligence. Mind, 59(236), 433–460. https://mind.oxfordjournals.org/content/LIX/236/433\nTuring, A. M. (1936). On Computable Numbers, with an Application to the Entscheidungsproblem. Proceedings of the London Mathematical Society, s2-42(1), 230–265. https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf\nThompson, K. (1984). Reflections on Trusting Trust. Communications of the ACM, 27(8), 761–763. https://dl.acm.org/doi/10.1145/358198.358210\nGhemawat, S., Gobioff, H., & Leung, S.-T. (2003). The Google File System. In Proceedings of the Nineteenth ACM Symposium on Operating Systems Principles (pp. 29–43). https://research.google.com/archive/gfs-sosp2003.pdf",
-    "crumbs": [
-      "References"
-    ]
-  },
-  {
-    "objectID": "intro.html#nd-sub-chapter",
-    "href": "intro.html#nd-sub-chapter",
-    "title": "1  Introduction",
-    "section": "1.2 2nd Sub-chapter",
-    "text": "1.2 2nd Sub-chapter\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
-    ]
-  },
-  {
-    "objectID": "intro.html#sub-chapter-1",
-    "href": "intro.html#sub-chapter-1",
-    "title": "\n1  Introduction\n",
-    "section": "\n1.2 Sub-chapter",
-    "text": "1.2 Sub-chapter\n\n\n\n\nKnuth, Donald E. 1984. “Literate Programming.” Comput. J. 27 (2): 97–111. https://doi.org/10.1093/comjnl/27.2.97.",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
-    ]
-  },
-  {
     "objectID": "intro.html#target-audience",
     "href": "intro.html#target-audience",
     "title": "1  Introduction",
@@ -177,115 +47,6 @@
     "text": "1.3 Curriculum\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa massa ultricies mi quis hendrerit dolor magna. Lobortis scelerisque fermentum dui faucibus. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit. Molestie a iaculis at erat pellentesque adipiscing commodo elit.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introduction</span>"
-    ]
-  },
-  {
-    "objectID": "new-chapter.html",
-    "href": "new-chapter.html",
-    "title": "\n2  New Chapter\n",
-    "section": "",
-    "text": "2.1 Learning Objectives\nEvery chapter also needs Learning objectives.",
-    "crumbs": [
-      "First Section",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>New Chapter</span>"
-    ]
-  },
-  {
-    "objectID": "new-chapter.html#libraries",
-    "href": "new-chapter.html#libraries",
-    "title": "\n2  New Chapter\n",
-    "section": "\n2.2 Libraries",
-    "text": "2.2 Libraries\nFor this chapter, we’ll need the following packages attached:\n*Remember to add any additional packages you need to your course’s own docker image.\n\nlibrary(magrittr)",
-    "crumbs": [
-      "First Section",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>New Chapter</span>"
-    ]
-  },
-  {
-    "objectID": "new-chapter.html#topic-of-section",
-    "href": "new-chapter.html#topic-of-section",
-    "title": "\n2  New Chapter\n",
-    "section": "\n2.3 Topic of Section",
-    "text": "2.3 Topic of Section\nYou can write all your text in sections like this, using ## to indicate a new header. you can use additional pound symbols to create lower levels of headers.\nSee here for additional general information about how you can format text within R Markdown files. In addition, see here for more in depth and advanced options.\n\n2.3.1 Subtopic\nHere’s a subheading (using three pound symbols) and some text in this subsection!",
-    "crumbs": [
-      "First Section",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>New Chapter</span>"
-    ]
-  },
-  {
-    "objectID": "new-chapter.html#code-examples",
-    "href": "new-chapter.html#code-examples",
-    "title": "\n2  New Chapter\n",
-    "section": "\n2.4 Code examples",
-    "text": "2.4 Code examples\nYou can demonstrate code like this:\n\noutput_dir &lt;- file.path(\"resources\", \"code_output\")\nif (!dir.exists(output_dir)) {\n  dir.create(output_dir)\n}\n\nAnd make plots too:\n\nhist_plot &lt;- hist(iris$Sepal.Length)\n\n\n\n\n\n\n\nYou can also save these plots to file:\n\npng(file.path(output_dir, \"test_plot.png\"))\nhist_plot\n\n$breaks\n[1] 4.0 4.5 5.0 5.5 6.0 6.5 7.0 7.5 8.0\n\n$counts\n[1]  5 27 27 30 31 18  6  6\n\n$density\n[1] 0.06666667 0.36000000 0.36000000 0.40000000 0.41333333 0.24000000 0.08000000\n[8] 0.08000000\n\n$mids\n[1] 4.25 4.75 5.25 5.75 6.25 6.75 7.25 7.75\n\n$xname\n[1] \"iris$Sepal.Length\"\n\n$equidist\n[1] TRUE\n\nattr(,\"class\")\n[1] \"histogram\"\n\ndev.off()\n\nquartz_off_screen \n                2",
-    "crumbs": [
-      "First Section",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>New Chapter</span>"
-    ]
-  },
-  {
-    "objectID": "new-chapter.html#image-example",
-    "href": "new-chapter.html#image-example",
-    "title": "\n2  New Chapter\n",
-    "section": "\n2.5 Image example",
-    "text": "2.5 Image example\nHow to include a Google slide. It’s simplest to use the ottrpal package:\n\n\n\n\n\n\n\n\nBut if you have the slide or some other image locally downloaded you can also use HTML like this:",
-    "crumbs": [
-      "First Section",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>New Chapter</span>"
-    ]
-  },
-  {
-    "objectID": "new-chapter.html#video-examples",
-    "href": "new-chapter.html#video-examples",
-    "title": "\n2  New Chapter\n",
-    "section": "\n2.6 Video examples",
-    "text": "2.6 Video examples\nYou may also want to embed videos in your course. If alternatively, you just want to include a link you can do so like this:\nCheck out this link to a video using markdown syntax.\n\n2.6.1 Using knitr\n\nTo embed videos in your course, you can use knitr::include_url() like this: Note that you should use echo=FALSE in the code chunk because we don’t want the code part of this to show up. If you are unfamiliar with how R Markdown code chunks work, read this.\n\n\n\n\n\n2.6.2 Using HTML\n\n\n\n2.6.3 Using knitr\n\n\n\n\n\n\n2.6.4 Using HTML",
-    "crumbs": [
-      "First Section",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>New Chapter</span>"
-    ]
-  },
-  {
-    "objectID": "new-chapter.html#website-examples",
-    "href": "new-chapter.html#website-examples",
-    "title": "\n2  New Chapter\n",
-    "section": "\n2.7 Website Examples",
-    "text": "2.7 Website Examples\nYet again you can use a link to a website like so:\nA Website\nYou might want to have users open a website in a new tab by default, especially if they need to reference both the course and a resource at once.\nA Website\nOr, you can embed some websites.\n\n2.7.1 Using knitr\n\nThis works:\n\n\n\n\n\n2.7.2 Using HTML",
-    "crumbs": [
-      "First Section",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>New Chapter</span>"
-    ]
-  },
-  {
-    "objectID": "new-chapter.html#stylized-boxes",
-    "href": "new-chapter.html#stylized-boxes",
-    "title": "\n2  New Chapter\n",
-    "section": "\n2.8 Stylized boxes",
-    "text": "2.8 Stylized boxes\nOccasionally, you might find it useful to emphasize a particular piece of information. To help you do so, we have provided css code and images (no need for you to worry about that!) to create the following stylized boxes.\nYou can use these boxes in your course with either of two options: using HTML code or Pandoc syntax.\n\n2.8.1 Using rmarkdown container syntax\nThe rmarkdown package allows for a different syntax to be converted to the HTML that you just saw and also allows for conversion to LaTeX. See the Bookdown documentation for more information. Note that Bookdown uses Pandoc.\n::: {.notice}\nNote using rmarkdown syntax.\n\n:::\n\nNote using rmarkdown syntax.\n\nAs an example you might do something like this:\n\nPlease click on the subsection headers in the left hand navigation bar (e.g., 2.1, 4.3) a second time to expand the table of contents and enable the scroll_highlight feature (see more)\n\n\n2.8.2 Using HTML\nTo add a warning box like the following use:\n\nFollowed by the text you want inside\n\nThis will create the following:\n\nFollowed by the text you want inside\n\nHere is a &lt;div class = \"warning\"&gt; box:\n\nNote text\n\nHere is a &lt;div class = \"github\"&gt; box:\n\nGitHub text\n\nHere is a &lt;div class = \"dictionary\"&gt; box:\n\ndictionary text\n\nHere is a &lt;div class = \"reflection\"&gt; box:\n\nreflection text\n\nHere is a &lt;div class = \"wip\"&gt; box:\n\nWork in Progress text",
-    "crumbs": [
-      "First Section",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>New Chapter</span>"
-    ]
-  },
-  {
-    "objectID": "new-chapter.html#dropdown-summaries",
-    "href": "new-chapter.html#dropdown-summaries",
-    "title": "\n2  New Chapter\n",
-    "section": "\n2.9 Dropdown summaries",
-    "text": "2.9 Dropdown summaries\n\nYou can hide additional information in a dropdown menu\n\nHere’s more words that are hidden.",
-    "crumbs": [
-      "First Section",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>New Chapter</span>"
-    ]
-  },
-  {
-    "objectID": "new-chapter.html#print-out-session-info",
-    "href": "new-chapter.html#print-out-session-info",
-    "title": "\n2  New Chapter\n",
-    "section": "\n2.10 Print out session info",
-    "text": "2.10 Print out session info\nYou should print out session info when you have code for reproducibility purposes.\n\ndevtools::session_info()\n\n─ Session info ───────────────────────────────────────────────────────────────\n setting  value\n version  R version 4.3.2 (2023-10-31)\n os       macOS Ventura 13.4.1\n system   aarch64, darwin20\n ui       X11\n language (EN)\n collate  en_US.UTF-8\n ctype    en_US.UTF-8\n tz       America/Los_Angeles\n date     2024-04-09\n pandoc   3.1.1 @ /Applications/RStudio.app/Contents/Resources/app/quarto/bin/tools/ (via rmarkdown)\n\n─ Packages ───────────────────────────────────────────────────────────────────\n package     * version date (UTC) lib source\n askpass       1.2.0   2023-09-03 [1] CRAN (R 4.3.0)\n cachem        1.0.8   2023-05-01 [1] CRAN (R 4.3.0)\n cli           3.6.2   2023-12-11 [1] CRAN (R 4.3.1)\n curl          5.2.1   2024-03-01 [1] CRAN (R 4.3.1)\n devtools      2.4.5   2022-10-11 [1] CRAN (R 4.3.0)\n digest        0.6.34  2024-01-11 [1] CRAN (R 4.3.1)\n ellipsis      0.3.2   2021-04-29 [1] CRAN (R 4.3.0)\n evaluate      0.23    2023-11-01 [1] CRAN (R 4.3.1)\n fansi         1.0.6   2023-12-08 [1] CRAN (R 4.3.1)\n fastmap       1.1.1   2023-02-24 [1] CRAN (R 4.3.0)\n fs            1.6.3   2023-07-20 [1] CRAN (R 4.3.0)\n glue          1.7.0   2024-01-09 [1] CRAN (R 4.3.1)\n highr         0.10    2022-12-22 [1] CRAN (R 4.3.0)\n hms           1.1.3   2023-03-21 [1] CRAN (R 4.3.0)\n htmltools     0.5.7   2023-11-03 [1] CRAN (R 4.3.1)\n htmlwidgets   1.6.4   2023-12-06 [1] CRAN (R 4.3.1)\n httpuv        1.6.13  2023-12-06 [1] CRAN (R 4.3.1)\n httr          1.4.7   2023-08-15 [1] CRAN (R 4.3.0)\n jsonlite      1.8.8   2023-12-04 [1] CRAN (R 4.3.1)\n knitr         1.45    2023-10-30 [1] CRAN (R 4.3.1)\n later         1.3.2   2023-12-06 [1] CRAN (R 4.3.1)\n lifecycle     1.0.4   2023-11-07 [1] CRAN (R 4.3.1)\n magrittr    * 2.0.3   2022-03-30 [1] CRAN (R 4.3.0)\n memoise       2.0.1   2021-11-26 [1] CRAN (R 4.3.0)\n mime          0.12    2021-09-28 [1] CRAN (R 4.3.0)\n miniUI        0.1.1.1 2018-05-18 [1] CRAN (R 4.3.0)\n openssl       2.1.1   2023-09-25 [1] CRAN (R 4.3.1)\n ottrpal       1.2.1   2024-04-05 [1] local\n pillar        1.9.0   2023-03-22 [1] CRAN (R 4.3.0)\n pkgbuild      1.4.3   2023-12-10 [1] CRAN (R 4.3.1)\n pkgconfig     2.0.3   2019-09-22 [1] CRAN (R 4.3.0)\n pkgload       1.3.3   2023-09-22 [1] CRAN (R 4.3.1)\n profvis       0.3.8   2023-05-02 [1] CRAN (R 4.3.0)\n promises      1.2.1   2023-08-10 [1] CRAN (R 4.3.0)\n purrr         1.0.2   2023-08-10 [1] CRAN (R 4.3.0)\n R6            2.5.1   2021-08-19 [1] CRAN (R 4.3.0)\n Rcpp          1.0.12  2024-01-09 [1] CRAN (R 4.3.1)\n readr         2.1.5   2024-01-10 [1] CRAN (R 4.3.1)\n remotes       2.4.2.1 2023-07-18 [1] CRAN (R 4.3.0)\n rlang         1.1.3   2024-01-10 [1] CRAN (R 4.3.1)\n rmarkdown     2.25    2023-09-18 [1] CRAN (R 4.3.1)\n rstudioapi    0.15.0  2023-07-07 [1] CRAN (R 4.3.0)\n sessioninfo   1.2.2   2021-12-06 [1] CRAN (R 4.3.0)\n shiny         1.8.0   2023-11-17 [1] CRAN (R 4.3.1)\n stringi       1.8.3   2023-12-11 [1] CRAN (R 4.3.1)\n stringr       1.5.1   2023-11-14 [1] CRAN (R 4.3.1)\n tibble        3.2.1   2023-03-20 [1] CRAN (R 4.3.0)\n tzdb          0.4.0   2023-05-12 [1] CRAN (R 4.3.0)\n urlchecker    1.0.1   2021-11-30 [1] CRAN (R 4.3.0)\n usethis       2.2.2   2023-07-06 [1] CRAN (R 4.3.0)\n utf8          1.2.4   2023-10-22 [1] CRAN (R 4.3.1)\n vctrs         0.6.5   2023-12-01 [1] CRAN (R 4.3.1)\n xfun          0.42    2024-02-08 [1] CRAN (R 4.3.1)\n xml2          1.3.6   2023-12-04 [1] CRAN (R 4.3.1)\n xtable        1.8-4   2019-04-21 [1] CRAN (R 4.3.0)\n yaml          2.3.8   2023-12-11 [1] CRAN (R 4.3.1)\n\n [1] /Library/Frameworks/R.framework/Versions/4.3-arm64/Resources/library\n\n──────────────────────────────────────────────────────────────────────────────",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>New Chapter</span>"
     ]
   },
   {
@@ -593,6 +354,16 @@
     "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cras pulvinar mattis nunc sed blandit. Egestas integer eget aliquet nibh praesent tristique. Phasellus faucibus scelerisque eleifend donec pretium. Consequat ac felis donec et odio pellentesque diam volutpat. Maecenas volutpat blandit aliquam etiam erat. Aenean et tortor at risus viverra adipiscing at in. Integer quis auctor elit sed. Rhoncus dolor purus non enim praesent elementum facilisis leo vel. Amet tellus cras adipiscing enim eu turpis egestas. Fermentum iaculis eu non diam phasellus. Et netus et malesuada fames ac. Mauris a diam maecenas sed enim ut sem. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu. Amet est placerat in egestas erat imperdiet sed euismod. Volutpat commodo sed egestas egestas fringilla phasellus faucibus.\nNullam vehicula ipsum a arcu cursus vitae congue. Scelerisque varius morbi enim nunc. Eleifend mi in nulla posuere sollicitudin aliquam ultrices. Nunc sed blandit libero volutpat sed. Sit amet porttitor eget dolor morbi non. Pellentesque habitant morbi tristique senectus et netus. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Tortor posuere ac ut consequat semper viverra nam libero justo. Bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida. Convallis aenean et tortor at. Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Hendrerit gravida rutrum quisque non tellus orci ac auctor augue. Nibh mauris cursus mattis molestie. Eu non diam phasellus vestibulum lorem sed risus ultricies tristique.\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Cras pulvinar mattis nunc sed blandit. Egestas integer eget aliquet nibh praesent tristique. Phasellus faucibus scelerisque eleifend donec pretium. Consequat ac felis donec et odio pellentesque diam volutpat. Maecenas volutpat blandit aliquam etiam erat. Aenean et tortor at risus viverra adipiscing at in. Integer quis auctor elit sed. Rhoncus dolor purus non enim praesent elementum facilisis leo vel. Amet tellus cras adipiscing enim eu turpis egestas. Fermentum iaculis eu non diam phasellus. Et netus et malesuada fames ac. Mauris a diam maecenas sed enim ut sem. Dignissim cras tincidunt lobortis feugiat vivamus at augue eget arcu. Amet est placerat in egestas erat imperdiet sed euismod. Volutpat commodo sed egestas egestas fringilla phasellus faucibus.\nNullam vehicula ipsum a arcu cursus vitae congue. Scelerisque varius morbi enim nunc. Eleifend mi in nulla posuere sollicitudin aliquam ultrices. Nunc sed blandit libero volutpat sed. Sit amet porttitor eget dolor morbi non. Pellentesque habitant morbi tristique senectus et netus. Scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam. Tortor posuere ac ut consequat semper viverra nam libero justo. Bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida. Convallis aenean et tortor at. Metus aliquam eleifend mi in nulla posuere sollicitudin aliquam ultrices. Hendrerit gravida rutrum quisque non tellus orci ac auctor augue. Nibh mauris cursus mattis molestie. Eu non diam phasellus vestibulum lorem sed risus ultricies tristique.",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Conclusion</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Shannon, C. E. (1948). A Mathematical Theory of Communication. Bell System Technical Journal, 27(3), 379–423. https://ieeexplore.ieee.org/document/6773024\nTuring, A. M. (1950). Computing Machinery and Intelligence. Mind, 59(236), 433–460. https://mind.oxfordjournals.org/content/LIX/236/433\nTuring, A. M. (1936). On Computable Numbers, with an Application to the Entscheidungsproblem. Proceedings of the London Mathematical Society, s2-42(1), 230–265. https://www.cs.virginia.edu/~robins/Turing_Paper_1936.pdf\nThompson, K. (1984). Reflections on Trusting Trust. Communications of the ACM, 27(8), 761–763. https://dl.acm.org/doi/10.1145/358198.358210\nGhemawat, S., Gobioff, H., & Leung, S.-T. (2003). The Google File System. In Proceedings of the Nineteenth ACM Symposium on Operating Systems Principles (pp. 29–43). https://research.google.com/archive/gfs-sosp2003.pdf",
+    "crumbs": [
+      "References"
     ]
   }
 ]
