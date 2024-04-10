@@ -17,8 +17,18 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
-    - new-chapter.qmd
+    - part: "First Section"
+      chapters:
+        - first-section-new-chapter.qmd
+    - part: "Second Section"
+      chapters:
+        - second-section-new-chapter.qmd
+    - part: "Third Section"
+      chapters:
+        - third-section-new-chapter.qmd
+    - conclusion.qmd
     - references.qmd
+    
   navbar:
     title: false
     background: white
