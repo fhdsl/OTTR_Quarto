@@ -7,7 +7,7 @@ book:
   author: "Howard Baek"
   date: "4/3/2024"
   favicon: img/favicon.ico
-  
+
   page-navigation: true
   search: true
   repo-url: https://github.com/fhdsl/ottr
@@ -17,18 +17,20 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
-    - summary.qmd
+    - new-chapter.qmd
     - references.qmd
   navbar:
+    title: false
     background: white
     foreground: black
     logo: /img/logo.jpeg
+    logo-href: https://hutchdatascience.org
     search: true
   
   page-footer:
     left: |
       This book was built with <a href="https://quarto.org/" style="color: #fff;">Quarto</a> by 
-      <a href="https://hutchdatascience.org/" style="color: #fff;">The Fred Hutch Data Science Lab</a>
+      <a href="https://hutchdatascience.org/" style="color: #fff;">The Fred Hutch Data Science Lab</a>.
     center: |
       All illustrations <a href="https://creativecommons.org/licenses/by/4.0/" style="color: #fff;">CC-BY. </a>
       <br>
@@ -42,6 +44,7 @@ bibliography: references.bib
 format:
   html:
     css: style.css
+    code-link: true
     link-external-newwindow: true
     linkcolor: "#00C1D5"
     image: img/favicon.ico

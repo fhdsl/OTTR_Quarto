@@ -273,7 +273,7 @@ div.notice{
   background-size: 70px;
   background-position: 15px center;
   background-color: #e8ebee;
-  background-image: url("/img/box_images/note.png");
+  background-image: url("/img/box-images/note.png");
 }
 
 
@@ -283,7 +283,7 @@ div.warning{
   background-size: 70px;
   background-position: 15px center;
   background-color: #e8ebee;
-  background-image: url("/img/box_images/warning.png");
+  background-image: url("/img/box-images/warning.png");
 }
 
 div.github{
@@ -292,7 +292,7 @@ div.github{
   background-size: 70px;
   background-position: 15px center;
   background-color: #e8ebee;
-  background-image: url("/img/box_images/github.png");
+  background-image: url("/img/box-images/github.png");
 }
 
 div.dictionary{
@@ -301,7 +301,7 @@ div.dictionary{
   background-size: 70px;
   background-position: 15px center;
   background-color: #e8ebee;
-  background-image: url("/img/box_images/dictionary.png");
+  background-image: url("/img/box-images/dictionary.png");
 }
 
 div.reflection{
@@ -310,7 +310,7 @@ div.reflection{
   background-size: 90px;
   background-position: 15px center;
   background-color: #e8ebee;
-  background-image: url("/img/box_images/thinking_face.png");
+  background-image: url("/img/box-images/thinking_face.png");
 }
 
 div.wip{
@@ -319,7 +319,7 @@ div.wip{
   background-size: 70px;
   background-position: 15px center;
   background-color: #f4d03f;
-  background-image: url("/img/box_images/under_construction.png");
+  background-image: url("/img/box-images/under_construction.png");
 }
 
 /* .book .book-body .page-wrapper .page-inner section.normal is needed
@@ -442,9 +442,16 @@ a.anchor:hover {
 /* Footer */
 .footer {
   font-family: "Lora", serif;
-  font-size: .85em;
+  font-size: 1em;
   color: #193a5c;
 }
+
+
+/* Navbar Header */
+.navbar-logo {
+    max-height: 33px;
+}
+
 
 /* Navbar Footer */
 .nav-footer {
