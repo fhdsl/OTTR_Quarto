@@ -54,10 +54,16 @@ bibliography: references.bib
 format:
   html:
     css: style.css
-    code-link: true
-    link-external-newwindow: true
     linkcolor: "#00C1D5"
+    mainfont: "Karla"
+     
+    code-link: true
+    code-copy: true
+    
+    link-external-newwindow: true
+  
     image: img/favicon.ico
+    license: "CC BY"
 knitr:
   opts_chunk:
     fig.path: "resources/images/figure/"
