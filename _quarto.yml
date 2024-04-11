@@ -55,6 +55,7 @@ format:
   html:
     css: style.css
     code-link: true
+    code-copy: true
     link-external-newwindow: true
     linkcolor: "#00C1D5"
     image: img/favicon.ico
