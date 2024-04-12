@@ -5,7 +5,7 @@
 p.caption {
   color: #777;
   margin-top: 10px;
-}
+} /* TODO What is this? */
 
 /* Styles for paragraph code, which inherit white-space property */
 p code {
@@ -16,7 +16,8 @@ p code {
 pre {
   word-break: normal;
   word-wrap: normal;
-}
+} 
+
 /* Inherits the white-space property for consistent code formatting */
 pre code {
   white-space: inherit;
@@ -24,6 +25,8 @@ pre code {
 
 
 /* Next 3 rules are for setting wide image at the top of each page and pushing down the book content to appear beneath the image */
+
+/* TODO: Do we need this CSS for hero images? Do we want to put a hero image?  */
 
 /* Styles for a large image container at the top of each page */
 .hero-image-container {
@@ -49,33 +52,14 @@ pre code {
 }
 
 
-/* ------------Links------------------ */
-/* Sets the color for links within a specific context */
-.book .book-body .page-wrapper .page-inner section.normal a {
-  color: #68ace5;
-}
-
-
-/*------------- Body and header text---------------- */
-
-.book.font-family-1 {
-  font-family: 'Karla', arial, sans-serif;
-}
+/*------------- Header text---------------- */
 
 h1, h2, h3, h4 {
   font-family: 'Lora', arial, sans-serif;
 }
 
-
-.book .book-body .page-wrapper .page-inner section.normal h1,
-.book .book-body .page-wrapper .page-inner section.normal h2,
-.book .book-body .page-wrapper .page-inner section.normal h3,
-.book .book-body .page-wrapper .page-inner section.normal h4,
-.book .book-body .page-wrapper .page-inner section.normal h5,
-.book .book-body .page-wrapper .page-inner section.normal h6 {
-    margin-top: 2.275em;
-    margin-bottom: 1em;
-}
+/* TODO: Do we need this? */
+/* Can we use the margin-XXX fields in https://quarto.org/docs/reference/formats/html.html#layout */
 
 .title {
   font-family: 'Lora';
@@ -90,55 +74,8 @@ h1, h2, h3, h4 {
   color: #0b8d96;
 }
 
-
-/*----------DROP CAPS--------------*/
-/* Styles the first letter of the first paragraph under a level 1 header as a drop cap */
-
-/*p:nth-child(2):first-letter {   /* /* DROP-CAP FOR FIRST P BENEATH EACH H1 OR H2*/ /*
-  color: #3fb5bd;
-  float: left;
-  font-family: 'Abril Fatface', serif;
-  font-size: 7em;
-  line-height: 65px;
-  padding-top: 4px;
-  padding-right: 8px;
-  padding-left: 3px;
-  margin-bottom: 9px;
-}
-*/
-
-.section.level1 > p:first-of-type:first-letter { /*drop cap for first p beneath level 1 headers only within class .section*/
-  color: #012d72;
-  float: left;
-  font-family: 'Abril Fatface', serif;
-  font-size: 7em;
-  line-height: 65px;
-  padding-top: 4px;
-  padding-right: 8px;
-  padding-left: 3px;
-  margin-bottom: 9px;
-}
-
-/* add drop cap to first paragraph that follows the first 2nd level header*/
-/*
-.section.level2:first-of-type > p:first-of-type:first-letter {
-  color: #3fb5bd;
-  float: left;
-  font-family: 'Abril Fatface', serif;
-  font-size: 7em;
-  line-height: 65px;
-  padding-top: 4px;
-  padding-right: 8px;
-  padding-left: 3px;
-  margin-bottom: 9px;
-}
-*/
-
-
-
 /*------------ TOC --------------*/
-
-
+/* TODO: This doesnt work */
 .book .book-summary {
   background: white;
   border-right: none;
@@ -170,7 +107,7 @@ color: #012d72
 
 .book .book-summary ul.summary li.active>a { /*active TOC links*/
   color: #68ace5 !important;
-  border-left: solid 4px;
+  border-left: solid 4px; /*TODO: This is the vertical line that pops up when you click on it*/
   border-color: #68ace5;
   padding-left: 11px !important;
 }
@@ -180,7 +117,7 @@ li.appendix span, li.part span { /* for TOC part names */
   margin-top: 1em;
   color: #000000;
   opacity: .9 !important;
-  text-transform: uppercase;
+  text-transform: uppercase; /*Uppercase the Section numbers*/
 }
 
 .part + li[data-level=""] { /* grabs first .chapter immediately after .part...but only those ch without numbers */
@@ -188,6 +125,7 @@ li.appendix span, li.part span { /* for TOC part names */
 }
 
 
+/* TODO: This doesnt work */
 /* The next two rules make the horizontal line go straight across in top navbar */
 
 .summary > li:first-child {
@@ -201,25 +139,13 @@ li.appendix span, li.part span { /* for TOC part names */
 }
 
 
-/*--- LOGO ---*/
-
-.toc-logo {
-  width: 200px !important;
-  object-fit: contain;
-  margin: 0 auto;
-}
-
-.toc-logo img {
-  max-width: 100%;
-  margin-bottom: 10px;
-}
-
-.summary > li:first-child {
-  height: auto !important;
+/* Sidebar Logo */
+.sidebar-logo {
+    max-width: 240px;
 }
 
 /* --------------Two columns--------------- */
-
+/* TODO: Where is this useful? */
 .col2 {
   columns: 2 200px;         /* number of columns and width in pixels*/
   -webkit-columns: 2 200px; /* chrome, safari */
@@ -241,7 +167,7 @@ li.appendix span, li.part span { /* for TOC part names */
 }
 
 /* --------------Even split- two columns--------------- */
-
+/* TODO: Where is this useful? */
 .split {
   display: flex;
 }
@@ -326,6 +252,7 @@ div.wip{
    to override the styles produced by gitbook, which are ridiculously
    overspecified. Goal of the selectors is to ensure internal "margins"
    controlled only by padding of container */
+/* TODO: Where is this useful? */
 
 .book .book-body .page-wrapper .page-inner section.normal div.rstudio-tip > :first-child,
 .book .book-body .page-wrapper .page-inner section.normal div.tip > :first-child {
@@ -337,6 +264,8 @@ div.wip{
   margin-bottom: 0;
 }
 
+
+/* TODO: Where is this useful? */
 iframe {
    -moz-transform-origin: top left;
    -webkit-transform-origin: top left;
@@ -355,35 +284,6 @@ iframe {
 
 .iframe-container > iframe {
   border: none;
-}
-
-
-/* -------Clipboard copy button --------- */
-.copy {
-  width: inherit;
-  background-color: #e2e2e2 ;
-  border: none;
-  border-radius: 2px;
-  float: right;
-  font-size: 60%;
-  padding: 4px 4px 4px 4px;
-}
-
-/* for new copy button */
-
-.hasCopyButton {
-  position: relative;
-}
-
-.btn-copy-ex {
-  position: absolute;
-  right: 0;
-  top: 0;
-  visibility: hidden;
-}
-
-.hasCopyButton:hover button.btn-copy-ex {
-  visibility: visible;
 }
 
 
@@ -429,9 +329,10 @@ a.anchor:hover {
 
 
 /*____Code Chunks____*/
+/* TODO: Where is this useful? */
 
 .sourceCode {
-  margin-bottom: 0.85em; /* adds same amount of margin as a <p> would */
+  margin-bottom: 1.5em; /* adds same amount of margin as a <p> would */
 }
 
 .sourceCode pre {
