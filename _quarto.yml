@@ -33,7 +33,6 @@ book:
   sidebar: 
     logo: "img/logo.jpeg"
     logo-href: "https://hutchdatascience.org/"
-    style: docked
     foreground: "#1B365D"
   
   page-footer:
