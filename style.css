@@ -24,42 +24,11 @@ pre code {
 }
 
 
-/* Next 3 rules are for setting wide image at the top of each page and pushing down the book content to appear beneath the image */
-
-/* TODO: Do we need this CSS for hero images? Do we want to put a hero image?  */
-
-/* Styles for a large image container at the top of each page */
-.hero-image-container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 200px;
-  /*background-image: url("images/books.jpg");*/
-  /*background-color: #193a5c;*/
-}
-
-/* Styles the .hero-image itself to cover a specific width and height */
-.hero-image {
-  width: 100%;
-  height: 80%;
-  /*object-fit: cover;*/
-}
-
-/* Adds padding to .page-inner to ensure content does not overlap with the hero image. */
-.page-inner {
-  padding-top: 140px !important;
-}
-
-
 /*------------- Header text---------------- */
 
 h1, h2, h3, h4 {
   font-family: 'Lora', arial, sans-serif;
 }
-
-/* TODO: Do we need this? */
-/* Can we use the margin-XXX fields in https://quarto.org/docs/reference/formats/html.html#layout */
 
 .title {
   font-family: 'Lora';
@@ -74,113 +43,11 @@ h1, h2, h3, h4 {
   color: #0b8d96;
 }
 
-/*------------ TOC --------------*/
-/* TODO: This doesnt work */
-.book .book-summary {
-  background: white;
-  border-right: none;
-}
-
-/*---color of links in TOC----*/
-
-.book .book-summary a {
-color: #012d72
-}
-
-.summary{
-  font-family: 'Karla', sans-serif;
-}
-
-/* all TOC list items, basically */
-.book .book-summary ul.summary li a,
-.book .book-summary ul.summary li span {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 15px;
-  padding-right: 15px;
-  color: #012d72;
-}
-
-.summary a:hover {
-  color: #68ace5 !important;
-}
-
-.book .book-summary ul.summary li.active>a { /*active TOC links*/
-  color: #68ace5 !important;
-  border-left: solid 4px; /*TODO: This is the vertical line that pops up when you click on it*/
-  border-color: #68ace5;
-  padding-left: 11px !important;
-}
-
-
-li.appendix span, li.part span { /* for TOC part names */
-  margin-top: 1em;
-  color: #000000;
-  opacity: .9 !important;
-  text-transform: uppercase; /*Uppercase the Section numbers*/
-}
-
-.part + li[data-level=""] { /* grabs first .chapter immediately after .part...but only those ch without numbers */
- text-transform: uppercase;
-}
-
-
-/* TODO: This doesnt work */
-/* The next two rules make the horizontal line go straight across in top navbar */
-
-.summary > li:first-child {
-	height: 50px;
-	padding-top: 10px;
-	border-bottom: 1px solid rgba(0,0,0,.07);
-}
-
-.book .book-summary ul.summary li.divider {
-	height: 0px;
-}
-
-
 /* Sidebar Logo */
 .sidebar-logo {
-    max-width: 240px;
+  width: 250px;
+  max-width: 250px;
 }
-
-/* --------------Two columns--------------- */
-/* TODO: Where is this useful? */
-.col2 {
-  columns: 2 200px;         /* number of columns and width in pixels*/
-  -webkit-columns: 2 200px; /* chrome, safari */
-  -moz-columns: 2 200px;    /* firefox */
-}
-
-
-.side-by-side {
-  display: flex;
-}
-
-.side1 {
-  width: 40%;
-}
-
-.side2 {
-  width: 58%;
-  margin-left: 1rem;
-}
-
-/* --------------Even split- two columns--------------- */
-/* TODO: Where is this useful? */
-.split {
-  display: flex;
-}
-
-.split1 {
-  width: 50%;
-  padding-right: 20px;
-}
-
-.split2 {
-  width: 50%;
-}
-
 
 /* Sidebar formating --------------------------------------------*/
 /* from r-pkgs.org*/
