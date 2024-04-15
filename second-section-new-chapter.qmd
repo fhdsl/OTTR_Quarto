@@ -121,7 +121,7 @@ knitr::include_url("https://yihui.org")
 
 ### Using HTML
 
-<iframe src="https://yihui.org" width="672" height="400px"></iframe>
+<iframe src="https://yihui.org" width="672px" height="400px"></iframe>
 
 
 ## Stylized boxes
