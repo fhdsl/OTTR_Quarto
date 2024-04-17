@@ -1,0 +1,26 @@
+{
+  "index.qmd": {
+    "index.html": "4e4752d7"
+  },
+  "intro.qmd": {
+    "intro.html": "ff283eec"
+  },
+  "first-section-new-chapter.qmd": {
+    "first-section-new-chapter.html": "b86e334e"
+  },
+  "second-section-new-chapter.qmd": {
+    "second-section-new-chapter.html": "c24ea4bb"
+  },
+  "third-section-new-chapter.qmd": {
+    "third-section-new-chapter.html": "405c0849"
+  },
+  "conclusion.qmd": {
+    "conclusion.html": "2cdb9832"
+  },
+  "references.qmd": {
+    "references.html": "9c96bbfe"
+  },
+  "404.qmd": {
+    "404.html": "12de7dff"
+  }
+}
