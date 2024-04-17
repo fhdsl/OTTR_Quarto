@@ -148,10 +148,10 @@ jobs:
           comment-id: ${{ steps.fc.outputs.comment-id }}
           issue-number: ${{ github.event.pull_request.number }}
           body: |
-            :eyes: [Quick Preview of Website](${{ steps.build-components.outputs.website_link }}) - Click for a preview of recent changes. \*
-            :file_folder: [Download Full Website](${{ steps.build-components.outputs.docs_link }}) - Download complete ZIP file of the website. 
+            :eyes: [Quick Preview of Website](${{ steps.build-components.outputs.website_link }}) - Click for a preview of recent changes.
+            :file_folder: [Download Full Website](${{ steps.build-components.outputs.docs_link }}) - Download complete Zip file of the website. 
             
-            The "Quick Preview" may not display all HTML features accurately, but it provides a basic overview.
+            The Quick Preview may not display all HTML features accurately, but it provides a basic overview.
 
             _Updated at ${{ steps.build-components.outputs.time }} with changes from the latest commit ${{ steps.build-components.outputs.commit_id }}_
           edit-mode: replace
