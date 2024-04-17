@@ -2,7 +2,7 @@
 
 ## Learning Objectives
 
-Every chapter also needs Learning objectives.
+Every chapter also needs Learning Objectives.
 
 ## Libraries
 

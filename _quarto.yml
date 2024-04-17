@@ -67,7 +67,3 @@ format:
 knitr:
   opts_chunk:
     fig.path: "resources/images/figure/"
-
-
-
-    
