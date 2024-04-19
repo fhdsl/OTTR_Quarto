@@ -23,14 +23,13 @@ jobs:
         with:
             files: config_automation.yml # Pass a space-separated list of configuration files. Rightmost files take precedence.
     outputs:
-      toggle_website: "${{ env.RENDER_WEBSITE }}"
       toggle_coursera: "${{ env.RENDER_COURSERA }}"
       toggle_leanpub: "${{ env.RENDER_LEANPUB }}"
       make_book_txt: "${{ env.MAKE_BOOK_TXT }}"
       rendering_docker_image: "${{ env.RENDERING_DOCKER_IMAGE }}"
       toggle_quiz_check: "${{ env.CHECK_QUIZZES }}"
 
-  render-bookdown:
+  render-quarto-book:
     name: Render Quarto Book
     needs: yaml-check
     runs-on: ubuntu-latest
@@ -54,7 +53,7 @@ jobs:
       - name: Delete old docs/*
         run: rm -rf docs/*
 
-      # Run quarto::render()
+      # Run quarto::quarto_render()
       - name: Run quarto render
         id: quarto-render
         run: |
@@ -65,7 +64,7 @@ jobs:
       - name: Check on render step
         if: steps.quarto-render.outcome != 'success'
         run: |
-          echo Quarto Render status ${{steps.bookdown.outcome}}
+          echo Quarto Render status ${{steps.quarto-render.outcome}}
           exit 1
 
       # Commit the rendered files inside docs/
@@ -101,9 +100,9 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
-      # Rendered content for Leanpub and Coursera is very similar.
+      # Rendered content for Leanpub and Coursera is similar.
       # This job creates a shared scaffold for both.
-      - name: Run TOC-less version of render -- quarto version
+      - name: Run TOC-less version of render
         id: toc_less_quarto
         run: Rscript -e "quarto::quarto_render('.', metadata = list(sidebar = F, toc = F))"
       
