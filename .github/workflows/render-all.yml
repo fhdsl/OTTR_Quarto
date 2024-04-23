@@ -104,7 +104,7 @@ jobs:
       # This job creates a shared scaffold for both.
       - name: Run TOC-less version of render
         id: toc_less_quarto
-        run: Rscript -e "quarto::quarto_render('.', metadata = list(sidebar = F, toc = F))"
+        run: Rscript -e "quarto::quarto_render('.', quarto_args = c('--output-dir', 'docs/no_toc'), metadata = list(sidebar = F, toc = F))"
       
       # Commit the TOC-less version files
       - name: Commit TOC-less Quarto files
