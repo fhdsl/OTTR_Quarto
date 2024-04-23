@@ -99,6 +99,10 @@ jobs:
           git config --global --add safe.directory $GITHUB_WORKSPACE
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+      
+       # We want a fresh run of the renders each time
+      - name: Delete old docs/no_toc/*
+        run: rm -rf docs/no_toc/*
 
       # Rendered content for Leanpub and Coursera is similar.
       # This job creates a shared scaffold for both.
