@@ -52,6 +52,16 @@ jobs:
       # We want a fresh run of the renders each time
       - name: Delete old docs/*
         run: rm -rf docs/*
+      
+       # Commit the rendered files inside docs/
+      - name: Commit empty docs folder
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+        run: |
+          git remote set-url origin https://${GH_PAT}@github.com/${GITHUB_REPOSITORY}
+          git add --force docs/*
+          git commit -m 'Empty docs folder' || echo "No changes to commit"
+          git push -u origin main  || echo "No changes to push"
 
       # Run quarto::quarto_render()
       - name: Run quarto render
