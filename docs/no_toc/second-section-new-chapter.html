@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Quarto Based OTTR Course - 1&nbsp; Introduction to the Course</title>
+<title>Quarto Based OTTR Course - 3&nbsp; New Chapter</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -30,8 +64,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./first-section-new-chapter.html" rel="next">
-<link href="./index.html" rel="prev">
+<link href="./third-section-new-chapter.html" rel="next">
+<link href="./first-section-new-chapter.html" rel="prev">
 <link href="./img/favicon.ico" rel="icon">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -74,143 +108,20 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="nav-sidebar floating">
+<body class="fullcontent">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <a class="flex-grow-1 no-decor" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-          <h1 class="quarto-secondary-nav-title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to the Course</span></h1>
-        </a>     
-      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
-        <i class="bi bi-search"></i>
-      </button>
-    </div>
-  </nav>
-</header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
-      <a href="./index.html" class="sidebar-logo-link">
-      <img src="./img/logo.jpeg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
-      </a>
-    <div class="sidebar-title mb-0 py-0">
-      <a href="./">Quarto Based OTTR Course</a> 
-        <div class="sidebar-tools-main">
-    <a href="https://github.com/fhdsl/ottr" title="Source Code" class="quarto-navigation-tool px-1" aria-label="Source Code"><i class="bi bi-github"></i></a>
-</div>
-    </div>
-      </div>
-        <div class="mt-2 flex-shrink-0 align-items-center">
-        <div class="sidebar-search">
-        <div id="quarto-search" class="" title="Search"></div>
-        </div>
-        </div>
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Quarto Based OTTR Course</span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to the Course</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
- <span class="menu-text">First Section</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./first-section-new-chapter.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">New Chapter</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true">
- <span class="menu-text">Second Section</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./second-section-new-chapter.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">New Chapter</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
- <span class="menu-text">Third Section</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./third-section-new-chapter.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">New Chapter</span></span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./conclusion.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Conclusion</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">References</span></a>
-  </div>
-</li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#motivation" id="toc-motivation" class="nav-link active" data-scroll-target="#motivation"><span class="header-section-number">1.1</span> Motivation</a></li>
-  <li><a href="#target-audience" id="toc-target-audience" class="nav-link" data-scroll-target="#target-audience"><span class="header-section-number">1.2</span> Target Audience</a></li>
-  <li><a href="#curriculum" id="toc-curriculum" class="nav-link" data-scroll-target="#curriculum"><span class="header-section-number">1.3</span> Curriculum</a></li>
-  </ul>
-<div class="toc-actions"><ul><li><a href="https://github.com/fhdsl/ottr/edit/main/intro.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfBvVELBg8lcynKj0TrzMlov1zil-Sbkh9VhMKRcSpeo1xo6g/viewform" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
-    </div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction to the Course</span></h1>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">New Chapter</span></h1>
 </div>
 
 
@@ -227,20 +138,209 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Fresh</p>
-<p>We think understanding AI is essential for executives. It helps today’s leaders make strategic decisions, drive innovation, enhance efficiency, and foster a culture that embraces the transformative power of these technologies. Specifically, AI proficiency can help leaders in the following ways.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu sem integer vitae justo eget magna. Viverra nibh cras pulvinar mattis. Est placerat in egestas erat imperdiet sed euismod. Diam quam nulla porttitor massa id neque. Fringilla urna porttitor rhoncus dolor purus non enim. Quis commodo odio aenean sed ad.</p>
-<section id="motivation" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="motivation"><span class="header-section-number">1.1</span> Motivation</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Eu sem integer vitae justo eget magna. Viverra nibh cras pulvinar mattis. Est placerat in egestas erat imperdiet sed euismod. Diam quam nulla porttitor massa id neque. Fringilla urna porttitor rhoncus dolor purus non enim. Quis commodo odio aenean sed adipiscing diam donec. Facilisi morbi tempus iaculis urna id volutpat. Natoque penatibus et magnis dis parturient montes. Semper feugiat nibh sed pulvinar proin gravida hendrerit lectus. Lectus magna fringilla urna porttitor rhoncus dolor purus non enim. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et. Lacus suspendisse faucibus interdum posuere lorem ipsum dolor sit. Egestas sed tempus urna et. Tincidunt eget nullam non nisi est sit amet. Erat imperdiet sed euismod nisi porta lorem mollis. Sit amet mauris commodo quis. Massa massa ultricies mi quis hendrerit dolor magna eget.</p>
+<section id="learning-objectives" class="level2" data-number="3.1">
+<h2 data-number="3.1" class="anchored" data-anchor-id="learning-objectives"><span class="header-section-number">3.1</span> Learning Objectives</h2>
+<p>Every chapter also needs Learning objectives.</p>
 </section>
-<section id="target-audience" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="target-audience"><span class="header-section-number">1.2</span> Target Audience</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa massa ultricies mi quis hendrerit dolor magna. Lobortis scelerisque fermentum dui faucibus. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit. Molestie a iaculis at erat pellentesque adipiscing commodo elit.</p>
+<section id="libraries" class="level2" data-number="3.2">
+<h2 data-number="3.2" class="anchored" data-anchor-id="libraries"><span class="header-section-number">3.2</span> Libraries</h2>
+<p>For this chapter, we’ll need the following packages attached:</p>
+<p>*Remember to add <a href="https://github.com/jhudsl/OTTR_Template/wiki/Using-Docker#starting-a-new-docker-image">any additional packages you need to your course’s own docker image</a>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(magrittr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </section>
-<section id="curriculum" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="curriculum"><span class="header-section-number">1.3</span> Curriculum</h2>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Massa massa ultricies mi quis hendrerit dolor magna. Lobortis scelerisque fermentum dui faucibus. Vulputate odio ut enim blandit volutpat maecenas volutpat blandit. Molestie a iaculis at erat pellentesque adipiscing commodo elit.</p>
+<section id="topic-of-section" class="level2" data-number="3.3">
+<h2 data-number="3.3" class="anchored" data-anchor-id="topic-of-section"><span class="header-section-number">3.3</span> Topic of Section</h2>
+<p>You can write all your text in sections like this, using <code>##</code> to indicate a new header. you can use additional pound symbols to create lower levels of headers.</p>
+<p>See <a href="https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf">here</a> for additional general information about how you can format text within R Markdown files. In addition, see <a href="https://pandoc.org/MANUAL.html#pandocs-markdown">here</a> for more in depth and advanced options.</p>
+<section id="subtopic" class="level3" data-number="3.3.1">
+<h3 data-number="3.3.1" class="anchored" data-anchor-id="subtopic"><span class="header-section-number">3.3.1</span> Subtopic</h3>
+<p>Here’s a subheading (using three pound symbols) and some text in this subsection!</p>
+</section>
+</section>
+<section id="code-examples" class="level2" data-number="3.4">
+<h2 data-number="3.4" class="anchored" data-anchor-id="code-examples"><span class="header-section-number">3.4</span> Code examples</h2>
+<p>You can demonstrate code like this:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>output_dir <span class="ot">&lt;-</span> <span class="fu">file.path</span>(<span class="st">"resources"</span>, <span class="st">"code_output"</span>)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">dir.exists</span>(output_dir)) {</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">dir.create</span>(output_dir)</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>And make plots too:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>hist_plot <span class="ot">&lt;-</span> <span class="fu">hist</span>(iris<span class="sc">$</span>Sepal.Length)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="resources/images/figure/unnamed-chunk-6-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>You can also save these plots to file:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">png</span>(<span class="fu">file.path</span>(output_dir, <span class="st">"test_plot.png"</span>))</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>hist_plot</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>$breaks
+[1] 4.0 4.5 5.0 5.5 6.0 6.5 7.0 7.5 8.0
+
+$counts
+[1]  5 27 27 30 31 18  6  6
+
+$density
+[1] 0.06666667 0.36000000 0.36000000 0.40000000 0.41333333 0.24000000 0.08000000
+[8] 0.08000000
+
+$mids
+[1] 4.25 4.75 5.25 5.75 6.25 6.75 7.25 7.75
+
+$xname
+[1] "iris$Sepal.Length"
+
+$equidist
+[1] TRUE
+
+attr(,"class")
+[1] "histogram"</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dev.off</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>png 
+  2 </code></pre>
+</div>
+</div>
+</section>
+<section id="image-example" class="level2" data-number="3.5">
+<h2 data-number="3.5" class="anchored" data-anchor-id="image-example"><span class="header-section-number">3.5</span> Image example</h2>
+<p>How to include a Google slide. It’s simplest to use the <code>ottrpal</code> package:</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="resources/images/figure//1Dw_rBb1hySN_76xh9-x5J2dWF_das9BAUjQigf2fN-E_g252f18e2576_1_0.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%" alt="Major point!! example image"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>But if you have the slide or some other image locally downloaded you can also use HTML like this:</p>
+<p><img src="resources/images/figure/1YmwKdIy9BeQ3EShgZhvtb3MgR8P6iDX4DfFD65W_gdQ_gcc4fbee202_0_141.png" title="Major point!! example image" alt="Major point!! example image" style="display: block; margin: auto; max-width: 100%; height: auto;"></p>
+</section>
+<section id="video-examples" class="level2" data-number="3.6">
+<h2 data-number="3.6" class="anchored" data-anchor-id="video-examples"><span class="header-section-number">3.6</span> Video examples</h2>
+<p>You may also want to embed videos in your course. If alternatively, you just want to include a link you can do so like this:</p>
+<p>Check out this <a href="https://www.youtube.com/embed/VOCYL-FNbr0">link to a video</a> using markdown syntax.</p>
+<section id="using-knitr" class="level3" data-number="3.6.1">
+<h3 data-number="3.6.1" class="anchored" data-anchor-id="using-knitr"><span class="header-section-number">3.6.1</span> Using <code>knitr</code></h3>
+<p>To embed videos in your course, you can use <code>knitr::include_url()</code> like this: Note that you should use <code>echo=FALSE</code> in the code chunk because we don’t want the code part of this to show up. If you are unfamiliar with <a href="https://rmarkdown.rstudio.com/lesson-3.html">how R Markdown code chunks work, read this</a>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<p>https://www.youtube.com/embed/VOCYL-FNbr0400pxhttps://www.youtube.com/embed/VOCYL-FNbr0</p>
+</div>
+</div>
+</section>
+<section id="using-html" class="level3" data-number="3.6.2">
+<h3 data-number="3.6.2" class="anchored" data-anchor-id="using-html"><span class="header-section-number">3.6.2</span> Using HTML</h3>
+<iframe src="https://www.youtube.com/embed/VOCYL-FNbr0" width="672" height="400px">
+</iframe>
+</section>
+<section id="using-knitr-1" class="level3" data-number="3.6.3">
+<h3 data-number="3.6.3" class="anchored" data-anchor-id="using-knitr-1"><span class="header-section-number">3.6.3</span> Using <code>knitr</code></h3>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<p>https://drive.google.com/file/d/1mm72K4V7fqpgAfWkr6b7HTZrc3f-T6AV/preview400pxhttps://drive.google.com/file/d/1mm72K4V7fqpgAfWkr6b7HTZrc3f-T6AV/preview</p>
+</div>
+</div>
+</section>
+<section id="using-html-1" class="level3" data-number="3.6.4">
+<h3 data-number="3.6.4" class="anchored" data-anchor-id="using-html-1"><span class="header-section-number">3.6.4</span> Using HTML</h3>
+<iframe src="https://drive.google.com/file/d/1mm72K4V7fqpgAfWkr6b7HTZrc3f-T6AV/preview" width="672" height="800px">
+</iframe>
+</section>
+</section>
+<section id="website-examples" class="level2" data-number="3.7">
+<h2 data-number="3.7" class="anchored" data-anchor-id="website-examples"><span class="header-section-number">3.7</span> Website Examples</h2>
+<p>Yet again you can use a link to a website like so:</p>
+<p><a href="https://yihui.org">A Website</a></p>
+<p>You might want to have users open a website in a new tab by default, especially if they need to reference both the course and a resource at once.</p>
+<p><a href="https://yihui.org" target="_blank">A Website</a></p>
+<p>Or, you can embed some websites.</p>
+<section id="using-knitr-2" class="level3" data-number="3.7.1">
+<h3 data-number="3.7.1" class="anchored" data-anchor-id="using-knitr-2"><span class="header-section-number">3.7.1</span> Using <code>knitr</code></h3>
+<p>This works:</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<p>https://yihui.org400pxhttps://yihui.org</p>
+</div>
+</div>
+</section>
+<section id="using-html-2" class="level3" data-number="3.7.2">
+<h3 data-number="3.7.2" class="anchored" data-anchor-id="using-html-2"><span class="header-section-number">3.7.2</span> Using HTML</h3>
+<iframe src="https://yihui.org" width="672px" height="400px">
+</iframe>
+</section>
+</section>
+<section id="stylized-boxes" class="level2" data-number="3.8">
+<h2 data-number="3.8" class="anchored" data-anchor-id="stylized-boxes"><span class="header-section-number">3.8</span> Stylized boxes</h2>
+<p>Occasionally, you might find it useful to emphasize a particular piece of information. To help you do so, we have provided css code and images (no need for you to worry about that!) to create the following stylized boxes.</p>
+<p>You can use these boxes in your course with either of two options: using HTML code or Pandoc syntax.</p>
+<section id="using-rmarkdown-container-syntax" class="level3" data-number="3.8.1">
+<h3 data-number="3.8.1" class="anchored" data-anchor-id="using-rmarkdown-container-syntax"><span class="header-section-number">3.8.1</span> Using <code>rmarkdown</code> container syntax</h3>
+<p>The <code>rmarkdown</code> package allows for a different syntax to be converted to the HTML that you just saw and also allows for conversion to LaTeX. See the <a href="https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html">Bookdown</a> documentation for more information. Note that Bookdown uses Pandoc.</p>
+<pre><code>::: {.notice}
+Note using rmarkdown syntax.
+
+:::</code></pre>
+<div class="notice">
+<p>Note using rmarkdown syntax.</p>
+</div>
+<p>As an example you might do something like this:</p>
+<div class="notice">
+<p>Please click on the subsection headers in the left hand navigation bar (e.g., 2.1, 4.3) a second time to expand the table of contents and enable the <code>scroll_highlight</code> feature (<a href="introduction.html#scroll-highlight">see more</a>)</p>
+</div>
+</section>
+<section id="using-html-3" class="level3" data-number="3.8.2">
+<h3 data-number="3.8.2" class="anchored" data-anchor-id="using-html-3"><span class="header-section-number">3.8.2</span> Using HTML</h3>
+<p>To add a warning box like the following use:</p>
+<div class="notice">
+<p>Followed by the text you want inside</p>
+</div>
+<p>This will create the following:</p>
+<div class="notice">
+<p>Followed by the text you want inside</p>
+</div>
+<p>Here is a <code>&lt;div class = "warning"&gt;</code> box:</p>
+<div class="warning">
+<p>Note text</p>
+</div>
+<p>Here is a <code>&lt;div class = "github"&gt;</code> box:</p>
+<div class="github">
+<p>GitHub text</p>
+</div>
+<p>Here is a <code>&lt;div class = "dictionary"&gt;</code> box:</p>
+<div class="dictionary">
+<p>dictionary text</p>
+</div>
+<p>Here is a <code>&lt;div class = "reflection"&gt;</code> box:</p>
+<div class="reflection">
+<p>reflection text</p>
+</div>
+<p>Here is a <code>&lt;div class = "wip"&gt;</code> box:</p>
+<div class="wip">
+<p>Work in Progress text</p>
+</div>
+</section>
+</section>
+<section id="dropdown-summaries" class="level2" data-number="3.9">
+<h2 data-number="3.9" class="anchored" data-anchor-id="dropdown-summaries"><span class="header-section-number">3.9</span> Dropdown summaries</h2>
+<details>
+<summary>
+You can hide additional information in a dropdown menu
+</summary>
+Here’s more words that are hidden.
+</details>
 
 
 </section>
@@ -662,13 +762,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./index.html" class="pagination-link" aria-label="Quarto Based OTTR Course">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Quarto Based OTTR Course</span>
+      <a href="./first-section-new-chapter.html" class="pagination-link" aria-label="New Chapter">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">New Chapter</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./first-section-new-chapter.html" class="pagination-link" aria-label="New Chapter">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">New Chapter</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./third-section-new-chapter.html" class="pagination-link" aria-label="New Chapter">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">New Chapter</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
@@ -680,7 +780,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </div>   
     <div class="nav-footer-center">
 <p>All illustrations <a href="https://creativecommons.org/licenses/by/4.0/" style="color: #fff;">CC-BY. </a> <br> All other materials <a href="https://creativecommons.org/licenses/by/4.0/" style="color: #fff;"> CC-BY </a> unless noted otherwise.</p>
-<div class="toc-actions d-sm-block d-md-none"><ul><li><a href="https://github.com/fhdsl/ottr/edit/main/intro.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfBvVELBg8lcynKj0TrzMlov1zil-Sbkh9VhMKRcSpeo1xo6g/viewform" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
+<div class="toc-actions"><ul><li><a href="https://github.com/fhdsl/ottr/edit/main/second-section-new-chapter.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfBvVELBg8lcynKj0TrzMlov1zil-Sbkh9VhMKRcSpeo1xo6g/viewform" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></div>
     <div class="nav-footer-right">
       <ul class="footer-items list-unstyled">
     <li class="nav-item compact">
