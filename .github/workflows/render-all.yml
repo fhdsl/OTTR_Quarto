@@ -86,7 +86,6 @@ jobs:
           git fetch origin
           git add --force docs/*
           git commit -m 'Render Quarto Book' || echo "No changes to commit"
-          git pull --allow-unrelated-histories --strategy-option=ours
           git push -u origin main  || echo "No changes to push"
 
   render-tocless:
