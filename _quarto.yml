@@ -31,9 +31,10 @@ book:
     - references.qmd
   
   sidebar: 
-    logo: "img/logo.jpeg"
+    logo: "img/logo-stacked.png"
     logo-href: "https://hutchdatascience.org/"
     foreground: "#1B365D"
+    
   
   page-footer:
     left: |
