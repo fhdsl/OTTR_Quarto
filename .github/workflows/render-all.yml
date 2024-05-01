@@ -59,7 +59,7 @@ jobs:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
           git remote set-url origin https://${GH_PAT}@github.com/${GITHUB_REPOSITORY}
-          git add --force docs/*
+          git add --force docs/
           git commit -m 'Empty docs folder' || echo "No changes to commit"
           git push -u origin main  || echo "No changes to push"
 
