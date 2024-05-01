@@ -109,20 +109,9 @@ jobs:
           git config --global --add safe.directory $GITHUB_WORKSPACE
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-      
-       # We want a fresh run of the renders each time
-      - name: Delete old docs/no_toc/*
-        run: rm -rf docs/no_toc/*
         
-        # Commit the rendered files inside docs/
-      - name: Commit empty docs/no_toc/ folder
-        env:
-          GH_PAT: ${{ secrets.GH_PAT }}
-        run: |
-          git remote set-url origin https://${GH_PAT}@github.com/${GITHUB_REPOSITORY}
-          git add --force docs/*
-          git commit -m 'Empty docs folder' || echo "No changes to commit"
-          git push -u origin main  || echo "No changes to push"
+      - name: Create docs/no_toc directory
+        run: mkdir -p docs/no_toc 
 
       # Rendered content for Leanpub and Coursera is similar.
       # This job creates a shared scaffold for both.
