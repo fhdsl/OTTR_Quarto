@@ -1,4 +1,4 @@
-name: Clean Docs Directory
+name: Clean Docs and No TOC Directory
 
 on:
   workflow_dispatch:
@@ -13,10 +13,14 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
-
-      - name: Delete files in docs except no_toc
+        
+      - name: Delete files in docs/no_toc
         run: |
-          find docs -mindepth 1 ! -regex '^docs/no_toc.*' -delete
+          find docs/no_toc -mindepth 1 -delete
+
+      - name: Delete other files in docs
+        run: |
+          find docs -mindepth 1 ! -path 'docs/no_toc*' -delete
 
       - name: Commit changes
         run: |
