@@ -52,7 +52,11 @@
   {
     "objectID": "first-section-new-chapter.html",
     "href": "first-section-new-chapter.html",
+<<<<<<< HEAD
     "title": "\n2  New Chapter\n",
+=======
+    "title": "2  New Chapter",
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
     "section": "",
     "text": "2.1 Learning Objectives\nEvery chapter also needs Learning objectives.",
     "crumbs": [
@@ -63,8 +67,13 @@
   {
     "objectID": "first-section-new-chapter.html#libraries",
     "href": "first-section-new-chapter.html#libraries",
+<<<<<<< HEAD
     "title": "\n2  New Chapter\n",
     "section": "\n2.2 Libraries",
+=======
+    "title": "2  New Chapter",
+    "section": "2.2 Libraries",
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
     "text": "2.2 Libraries\nFor this chapter, we’ll need the following packages attached:\n*Remember to add any additional packages you need to your course’s own docker image.\n\nlibrary(magrittr)",
     "crumbs": [
       "First Section",
@@ -74,8 +83,13 @@
   {
     "objectID": "first-section-new-chapter.html#topic-of-section",
     "href": "first-section-new-chapter.html#topic-of-section",
+<<<<<<< HEAD
     "title": "\n2  New Chapter\n",
     "section": "\n2.3 Topic of Section",
+=======
+    "title": "2  New Chapter",
+    "section": "2.3 Topic of Section",
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
     "text": "2.3 Topic of Section\nYou can write all your text in sections like this, using ## to indicate a new header. you can use additional pound symbols to create lower levels of headers.\nSee here for additional general information about how you can format text within R Markdown files. In addition, see here for more in depth and advanced options.\n\n2.3.1 Subtopic\nHere’s a subheading (using three pound symbols) and some text in this subsection!",
     "crumbs": [
       "First Section",
@@ -85,9 +99,15 @@
   {
     "objectID": "first-section-new-chapter.html#code-examples",
     "href": "first-section-new-chapter.html#code-examples",
+<<<<<<< HEAD
     "title": "\n2  New Chapter\n",
     "section": "\n2.4 Code examples",
     "text": "2.4 Code examples\nYou can demonstrate code like this:\n\noutput_dir &lt;- file.path(\"resources\", \"code_output\")\nif (!dir.exists(output_dir)) {\n  dir.create(output_dir)\n}\n\nAnd make plots too:\n\nhist_plot &lt;- hist(iris$Sepal.Length)\n\n\n\n\n\n\n\nYou can also save these plots to file:\n\npng(file.path(output_dir, \"test_plot.png\"))\nhist_plot\n\n$breaks\n[1] 4.0 4.5 5.0 5.5 6.0 6.5 7.0 7.5 8.0\n\n$counts\n[1]  5 27 27 30 31 18  6  6\n\n$density\n[1] 0.06666667 0.36000000 0.36000000 0.40000000 0.41333333 0.24000000 0.08000000\n[8] 0.08000000\n\n$mids\n[1] 4.25 4.75 5.25 5.75 6.25 6.75 7.25 7.75\n\n$xname\n[1] \"iris$Sepal.Length\"\n\n$equidist\n[1] TRUE\n\nattr(,\"class\")\n[1] \"histogram\"\n\ndev.off()\n\nquartz_off_screen \n                2",
+=======
+    "title": "2  New Chapter",
+    "section": "2.4 Code examples",
+    "text": "2.4 Code examples\nYou can demonstrate code like this:\n\noutput_dir &lt;- file.path(\"resources\", \"code_output\")\nif (!dir.exists(output_dir)) {\n  dir.create(output_dir)\n}\n\nAnd make plots too:\n\nhist_plot &lt;- hist(iris$Sepal.Length)\n\n\n\n\n\n\n\n\nYou can also save these plots to file:\n\npng(file.path(output_dir, \"test_plot.png\"))\nhist_plot\n\n$breaks\n[1] 4.0 4.5 5.0 5.5 6.0 6.5 7.0 7.5 8.0\n\n$counts\n[1]  5 27 27 30 31 18  6  6\n\n$density\n[1] 0.06666667 0.36000000 0.36000000 0.40000000 0.41333333 0.24000000 0.08000000\n[8] 0.08000000\n\n$mids\n[1] 4.25 4.75 5.25 5.75 6.25 6.75 7.25 7.75\n\n$xname\n[1] \"iris$Sepal.Length\"\n\n$equidist\n[1] TRUE\n\nattr(,\"class\")\n[1] \"histogram\"\n\ndev.off()\n\npng \n  2",
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
     "crumbs": [
       "First Section",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>New Chapter</span>"
@@ -96,9 +116,15 @@
   {
     "objectID": "first-section-new-chapter.html#image-example",
     "href": "first-section-new-chapter.html#image-example",
+<<<<<<< HEAD
     "title": "\n2  New Chapter\n",
     "section": "\n2.5 Image example",
     "text": "2.5 Image example\nHow to include a Google slide. It’s simplest to use the ottrpal package:\n\n\n\n\n\n\n\n\nBut if you have the slide or some other image locally downloaded you can also use HTML like this:",
+=======
+    "title": "2  New Chapter",
+    "section": "2.5 Image example",
+    "text": "2.5 Image example\nHow to include a Google slide. It’s simplest to use the ottrpal package:\n\n\n\n\n\n\n\n\n\nBut if you have the slide or some other image locally downloaded you can also use HTML like this:",
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
     "crumbs": [
       "First Section",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>New Chapter</span>"
@@ -107,9 +133,15 @@
   {
     "objectID": "first-section-new-chapter.html#video-examples",
     "href": "first-section-new-chapter.html#video-examples",
+<<<<<<< HEAD
     "title": "\n2  New Chapter\n",
     "section": "\n2.6 Video examples",
     "text": "2.6 Video examples\nYou may also want to embed videos in your course. If alternatively, you just want to include a link you can do so like this:\nCheck out this link to a video using markdown syntax.\n\n2.6.1 Using knitr\n\nTo embed videos in your course, you can use knitr::include_url() like this: Note that you should use echo=FALSE in the code chunk because we don’t want the code part of this to show up. If you are unfamiliar with how R Markdown code chunks work, read this.\n\n\n\n\n\n2.6.2 Using HTML\n\n\n\n2.6.3 Using knitr\n\n\n\n\n\n\n2.6.4 Using HTML",
+=======
+    "title": "2  New Chapter",
+    "section": "2.6 Video examples",
+    "text": "2.6 Video examples\nYou may also want to embed videos in your course. If alternatively, you just want to include a link you can do so like this:\nCheck out this link to a video using markdown syntax.\n\n2.6.1 Using knitr\nTo embed videos in your course, you can use knitr::include_url() like this: Note that you should use echo=FALSE in the code chunk because we don’t want the code part of this to show up. If you are unfamiliar with how R Markdown code chunks work, read this.\n\n\nhttps://www.youtube.com/embed/VOCYL-FNbr0400pxhttps://www.youtube.com/embed/VOCYL-FNbr0\n\n\n\n\n2.6.2 Using HTML\n\n\n\n\n2.6.3 Using knitr\n\n\nhttps://drive.google.com/file/d/1mm72K4V7fqpgAfWkr6b7HTZrc3f-T6AV/preview400pxhttps://drive.google.com/file/d/1mm72K4V7fqpgAfWkr6b7HTZrc3f-T6AV/preview\n\n\n\n\n2.6.4 Using HTML",
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
     "crumbs": [
       "First Section",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>New Chapter</span>"
@@ -118,9 +150,15 @@
   {
     "objectID": "first-section-new-chapter.html#website-examples",
     "href": "first-section-new-chapter.html#website-examples",
+<<<<<<< HEAD
     "title": "\n2  New Chapter\n",
     "section": "\n2.7 Website Examples",
     "text": "2.7 Website Examples\nYet again you can use a link to a website like so:\nA Website\nYou might want to have users open a website in a new tab by default, especially if they need to reference both the course and a resource at once.\nA Website\nOr, you can embed some websites.\n\n2.7.1 Using knitr\n\nThis works:\n\n\n\n\n\n2.7.2 Using HTML",
+=======
+    "title": "2  New Chapter",
+    "section": "2.7 Website Examples",
+    "text": "2.7 Website Examples\nYet again you can use a link to a website like so:\nA Website\nYou might want to have users open a website in a new tab by default, especially if they need to reference both the course and a resource at once.\nA Website\nOr, you can embed some websites.\n\n2.7.1 Using knitr\nThis works:\n\n\nhttps://yihui.org400pxhttps://yihui.org\n\n\n\n\n2.7.2 Using HTML",
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
     "crumbs": [
       "First Section",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>New Chapter</span>"
@@ -129,9 +167,15 @@
   {
     "objectID": "first-section-new-chapter.html#stylized-boxes",
     "href": "first-section-new-chapter.html#stylized-boxes",
+<<<<<<< HEAD
     "title": "\n2  New Chapter\n",
     "section": "\n2.8 Stylized boxes",
     "text": "2.8 Stylized boxes\nOccasionally, you might find it useful to emphasize a particular piece of information. To help you do so, we have provided css code and images (no need for you to worry about that!) to create the following stylized boxes.\nYou can use these boxes in your course with either of two options: using HTML code or Pandoc syntax.\n\n2.8.1 Using rmarkdown container syntax\nThe rmarkdown package allows for a different syntax to be converted to the HTML that you just saw and also allows for conversion to LaTeX. See the Bookdown documentation for more information. Note that Bookdown uses Pandoc.\n::: {.notice}\nNote using rmarkdown syntax.\n\n:::\n\nNote using rmarkdown syntax.\n\nAs an example you might do something like this:\n\nPlease click on the subsection headers in the left hand navigation bar (e.g., 2.1, 4.3) a second time to expand the table of contents and enable the scroll_highlight feature (see more)\n\n\n2.8.2 Using HTML\nTo add a warning box like the following use:\n\nFollowed by the text you want inside\n\nThis will create the following:\n\nFollowed by the text you want inside\n\nHere is a &lt;div class = \"warning\"&gt; box:\n\nNote text\n\nHere is a &lt;div class = \"github\"&gt; box:\n\nGitHub text\n\nHere is a &lt;div class = \"dictionary\"&gt; box:\n\ndictionary text\n\nHere is a &lt;div class = \"reflection\"&gt; box:\n\nreflection text\n\nHere is a &lt;div class = \"wip\"&gt; box:\n\nWork in Progress text",
+=======
+    "title": "2  New Chapter",
+    "section": "2.8 Stylized boxes",
+    "text": "2.8 Stylized boxes\nOccasionally, you might find it useful to emphasize a particular piece of information. To help you do so, we have provided css code and images (no need for you to worry about that!) to create the following stylized boxes.\nYou can use these boxes in your course with either of two options: using HTML code or Pandoc syntax.\n\n2.8.1 Using rmarkdown container syntax\nThe rmarkdown package allows for a different syntax to be converted to the HTML that you just saw and also allows for conversion to LaTeX. See the Bookdown documentation for more information. Note that Bookdown uses Pandoc.\n::: {.notice}\nNote using rmarkdown syntax.\n\n:::\n\nNote using rmarkdown syntax.\n\nAs an example you might do something like this:\n\nPlease click on the subsection headers in the left hand navigation bar (e.g., 2.1, 4.3) a second time to expand the table of contents and enable the scroll_highlight feature (see more)\n\n\n\n2.8.2 Using HTML\nTo add a warning box like the following use:\n\nFollowed by the text you want inside\n\nThis will create the following:\n\nFollowed by the text you want inside\n\nHere is a &lt;div class = \"warning\"&gt; box:\n\nNote text\n\nHere is a &lt;div class = \"github\"&gt; box:\n\nGitHub text\n\nHere is a &lt;div class = \"dictionary\"&gt; box:\n\ndictionary text\n\nHere is a &lt;div class = \"reflection\"&gt; box:\n\nreflection text\n\nHere is a &lt;div class = \"wip\"&gt; box:\n\nWork in Progress text",
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
     "crumbs": [
       "First Section",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>New Chapter</span>"
@@ -140,9 +184,15 @@
   {
     "objectID": "first-section-new-chapter.html#dropdown-summaries",
     "href": "first-section-new-chapter.html#dropdown-summaries",
+<<<<<<< HEAD
     "title": "\n2  New Chapter\n",
     "section": "\n2.9 Dropdown summaries",
     "text": "2.9 Dropdown summaries\n\nYou can hide additional information in a dropdown menu\n\nHere’s more words that are hidden.",
+=======
+    "title": "2  New Chapter",
+    "section": "2.9 Dropdown summaries",
+    "text": "2.9 Dropdown summaries\n\n\nYou can hide additional information in a dropdown menu\n\nHere’s more words that are hidden.",
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
     "crumbs": [
       "First Section",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>New Chapter</span>"
@@ -151,7 +201,11 @@
   {
     "objectID": "second-section-new-chapter.html",
     "href": "second-section-new-chapter.html",
+<<<<<<< HEAD
     "title": "\n3  New Chapter\n",
+=======
+    "title": "3  New Chapter",
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
     "section": "",
     "text": "3.1 Learning Objectives\nEvery chapter also needs Learning objectives.",
     "crumbs": [
@@ -162,8 +216,13 @@
   {
     "objectID": "second-section-new-chapter.html#libraries",
     "href": "second-section-new-chapter.html#libraries",
+<<<<<<< HEAD
     "title": "\n3  New Chapter\n",
     "section": "\n3.2 Libraries",
+=======
+    "title": "3  New Chapter",
+    "section": "3.2 Libraries",
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
     "text": "3.2 Libraries\nFor this chapter, we’ll need the following packages attached:\n*Remember to add any additional packages you need to your course’s own docker image.\n\nlibrary(magrittr)",
     "crumbs": [
       "Second Section",
@@ -173,8 +232,13 @@
   {
     "objectID": "second-section-new-chapter.html#topic-of-section",
     "href": "second-section-new-chapter.html#topic-of-section",
+<<<<<<< HEAD
     "title": "\n3  New Chapter\n",
     "section": "\n3.3 Topic of Section",
+=======
+    "title": "3  New Chapter",
+    "section": "3.3 Topic of Section",
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
     "text": "3.3 Topic of Section\nYou can write all your text in sections like this, using ## to indicate a new header. you can use additional pound symbols to create lower levels of headers.\nSee here for additional general information about how you can format text within R Markdown files. In addition, see here for more in depth and advanced options.\n\n3.3.1 Subtopic\nHere’s a subheading (using three pound symbols) and some text in this subsection!",
     "crumbs": [
       "Second Section",
@@ -184,9 +248,15 @@
   {
     "objectID": "second-section-new-chapter.html#code-examples",
     "href": "second-section-new-chapter.html#code-examples",
+<<<<<<< HEAD
     "title": "\n3  New Chapter\n",
     "section": "\n3.4 Code examples",
     "text": "3.4 Code examples\nYou can demonstrate code like this:\n\noutput_dir &lt;- file.path(\"resources\", \"code_output\")\nif (!dir.exists(output_dir)) {\n  dir.create(output_dir)\n}\n\nAnd make plots too:\n\nhist_plot &lt;- hist(iris$Sepal.Length)\n\n\n\n\n\n\n\nYou can also save these plots to file:\n\npng(file.path(output_dir, \"test_plot.png\"))\nhist_plot\n\n$breaks\n[1] 4.0 4.5 5.0 5.5 6.0 6.5 7.0 7.5 8.0\n\n$counts\n[1]  5 27 27 30 31 18  6  6\n\n$density\n[1] 0.06666667 0.36000000 0.36000000 0.40000000 0.41333333 0.24000000 0.08000000\n[8] 0.08000000\n\n$mids\n[1] 4.25 4.75 5.25 5.75 6.25 6.75 7.25 7.75\n\n$xname\n[1] \"iris$Sepal.Length\"\n\n$equidist\n[1] TRUE\n\nattr(,\"class\")\n[1] \"histogram\"\n\ndev.off()\n\nquartz_off_screen \n                2",
+=======
+    "title": "3  New Chapter",
+    "section": "3.4 Code examples",
+    "text": "3.4 Code examples\nYou can demonstrate code like this:\n\noutput_dir &lt;- file.path(\"resources\", \"code_output\")\nif (!dir.exists(output_dir)) {\n  dir.create(output_dir)\n}\n\nAnd make plots too:\n\nhist_plot &lt;- hist(iris$Sepal.Length)\n\n\n\n\n\n\n\n\nYou can also save these plots to file:\n\npng(file.path(output_dir, \"test_plot.png\"))\nhist_plot\n\n$breaks\n[1] 4.0 4.5 5.0 5.5 6.0 6.5 7.0 7.5 8.0\n\n$counts\n[1]  5 27 27 30 31 18  6  6\n\n$density\n[1] 0.06666667 0.36000000 0.36000000 0.40000000 0.41333333 0.24000000 0.08000000\n[8] 0.08000000\n\n$mids\n[1] 4.25 4.75 5.25 5.75 6.25 6.75 7.25 7.75\n\n$xname\n[1] \"iris$Sepal.Length\"\n\n$equidist\n[1] TRUE\n\nattr(,\"class\")\n[1] \"histogram\"\n\ndev.off()\n\npng \n  2",
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
     "crumbs": [
       "Second Section",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>New Chapter</span>"
@@ -195,9 +265,15 @@
   {
     "objectID": "second-section-new-chapter.html#image-example",
     "href": "second-section-new-chapter.html#image-example",
+<<<<<<< HEAD
     "title": "\n3  New Chapter\n",
     "section": "\n3.5 Image example",
     "text": "3.5 Image example\nHow to include a Google slide. It’s simplest to use the ottrpal package:\n\n\n\n\n\n\n\n\nBut if you have the slide or some other image locally downloaded you can also use HTML like this:",
+=======
+    "title": "3  New Chapter",
+    "section": "3.5 Image example",
+    "text": "3.5 Image example\nHow to include a Google slide. It’s simplest to use the ottrpal package:\n\n\n\n\n\n\n\n\n\nBut if you have the slide or some other image locally downloaded you can also use HTML like this:",
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
     "crumbs": [
       "Second Section",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>New Chapter</span>"
@@ -206,9 +282,15 @@
   {
     "objectID": "second-section-new-chapter.html#video-examples",
     "href": "second-section-new-chapter.html#video-examples",
+<<<<<<< HEAD
     "title": "\n3  New Chapter\n",
     "section": "\n3.6 Video examples",
     "text": "3.6 Video examples\nYou may also want to embed videos in your course. If alternatively, you just want to include a link you can do so like this:\nCheck out this link to a video using markdown syntax.\n\n3.6.1 Using knitr\n\nTo embed videos in your course, you can use knitr::include_url() like this: Note that you should use echo=FALSE in the code chunk because we don’t want the code part of this to show up. If you are unfamiliar with how R Markdown code chunks work, read this.\n\n\n\n\n\n3.6.2 Using HTML\n\n\n\n3.6.3 Using knitr\n\n\n\n\n\n\n3.6.4 Using HTML",
+=======
+    "title": "3  New Chapter",
+    "section": "3.6 Video examples",
+    "text": "3.6 Video examples\nYou may also want to embed videos in your course. If alternatively, you just want to include a link you can do so like this:\nCheck out this link to a video using markdown syntax.\n\n3.6.1 Using knitr\nTo embed videos in your course, you can use knitr::include_url() like this: Note that you should use echo=FALSE in the code chunk because we don’t want the code part of this to show up. If you are unfamiliar with how R Markdown code chunks work, read this.\n\n\nhttps://www.youtube.com/embed/VOCYL-FNbr0400pxhttps://www.youtube.com/embed/VOCYL-FNbr0\n\n\n\n\n3.6.2 Using HTML\n\n\n\n\n3.6.3 Using knitr\n\n\nhttps://drive.google.com/file/d/1mm72K4V7fqpgAfWkr6b7HTZrc3f-T6AV/preview400pxhttps://drive.google.com/file/d/1mm72K4V7fqpgAfWkr6b7HTZrc3f-T6AV/preview\n\n\n\n\n3.6.4 Using HTML",
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
     "crumbs": [
       "Second Section",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>New Chapter</span>"
@@ -217,9 +299,15 @@
   {
     "objectID": "second-section-new-chapter.html#website-examples",
     "href": "second-section-new-chapter.html#website-examples",
+<<<<<<< HEAD
     "title": "\n3  New Chapter\n",
     "section": "\n3.7 Website Examples",
     "text": "3.7 Website Examples\nYet again you can use a link to a website like so:\nA Website\nYou might want to have users open a website in a new tab by default, especially if they need to reference both the course and a resource at once.\nA Website\nOr, you can embed some websites.\n\n3.7.1 Using knitr\n\nThis works:\n\n\n\n\n\n3.7.2 Using HTML",
+=======
+    "title": "3  New Chapter",
+    "section": "3.7 Website Examples",
+    "text": "3.7 Website Examples\nYet again you can use a link to a website like so:\nA Website\nYou might want to have users open a website in a new tab by default, especially if they need to reference both the course and a resource at once.\nA Website\nOr, you can embed some websites.\n\n3.7.1 Using knitr\nThis works:\n\n\nhttps://yihui.org400pxhttps://yihui.org\n\n\n\n\n3.7.2 Using HTML",
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
     "crumbs": [
       "Second Section",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>New Chapter</span>"
@@ -228,9 +316,15 @@
   {
     "objectID": "second-section-new-chapter.html#stylized-boxes",
     "href": "second-section-new-chapter.html#stylized-boxes",
+<<<<<<< HEAD
     "title": "\n3  New Chapter\n",
     "section": "\n3.8 Stylized boxes",
     "text": "3.8 Stylized boxes\nOccasionally, you might find it useful to emphasize a particular piece of information. To help you do so, we have provided css code and images (no need for you to worry about that!) to create the following stylized boxes.\nYou can use these boxes in your course with either of two options: using HTML code or Pandoc syntax.\n\n3.8.1 Using rmarkdown container syntax\nThe rmarkdown package allows for a different syntax to be converted to the HTML that you just saw and also allows for conversion to LaTeX. See the Bookdown documentation for more information. Note that Bookdown uses Pandoc.\n::: {.notice}\nNote using rmarkdown syntax.\n\n:::\n\nNote using rmarkdown syntax.\n\nAs an example you might do something like this:\n\nPlease click on the subsection headers in the left hand navigation bar (e.g., 2.1, 4.3) a second time to expand the table of contents and enable the scroll_highlight feature (see more)\n\n\n3.8.2 Using HTML\nTo add a warning box like the following use:\n\nFollowed by the text you want inside\n\nThis will create the following:\n\nFollowed by the text you want inside\n\nHere is a &lt;div class = \"warning\"&gt; box:\n\nNote text\n\nHere is a &lt;div class = \"github\"&gt; box:\n\nGitHub text\n\nHere is a &lt;div class = \"dictionary\"&gt; box:\n\ndictionary text\n\nHere is a &lt;div class = \"reflection\"&gt; box:\n\nreflection text\n\nHere is a &lt;div class = \"wip\"&gt; box:\n\nWork in Progress text",
+=======
+    "title": "3  New Chapter",
+    "section": "3.8 Stylized boxes",
+    "text": "3.8 Stylized boxes\nOccasionally, you might find it useful to emphasize a particular piece of information. To help you do so, we have provided css code and images (no need for you to worry about that!) to create the following stylized boxes.\nYou can use these boxes in your course with either of two options: using HTML code or Pandoc syntax.\n\n3.8.1 Using rmarkdown container syntax\nThe rmarkdown package allows for a different syntax to be converted to the HTML that you just saw and also allows for conversion to LaTeX. See the Bookdown documentation for more information. Note that Bookdown uses Pandoc.\n::: {.notice}\nNote using rmarkdown syntax.\n\n:::\n\nNote using rmarkdown syntax.\n\nAs an example you might do something like this:\n\nPlease click on the subsection headers in the left hand navigation bar (e.g., 2.1, 4.3) a second time to expand the table of contents and enable the scroll_highlight feature (see more)\n\n\n\n3.8.2 Using HTML\nTo add a warning box like the following use:\n\nFollowed by the text you want inside\n\nThis will create the following:\n\nFollowed by the text you want inside\n\nHere is a &lt;div class = \"warning\"&gt; box:\n\nNote text\n\nHere is a &lt;div class = \"github\"&gt; box:\n\nGitHub text\n\nHere is a &lt;div class = \"dictionary\"&gt; box:\n\ndictionary text\n\nHere is a &lt;div class = \"reflection\"&gt; box:\n\nreflection text\n\nHere is a &lt;div class = \"wip\"&gt; box:\n\nWork in Progress text",
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
     "crumbs": [
       "Second Section",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>New Chapter</span>"
@@ -239,9 +333,15 @@
   {
     "objectID": "second-section-new-chapter.html#dropdown-summaries",
     "href": "second-section-new-chapter.html#dropdown-summaries",
+<<<<<<< HEAD
     "title": "\n3  New Chapter\n",
     "section": "\n3.9 Dropdown summaries",
     "text": "3.9 Dropdown summaries\n\nYou can hide additional information in a dropdown menu\n\nHere’s more words that are hidden.",
+=======
+    "title": "3  New Chapter",
+    "section": "3.9 Dropdown summaries",
+    "text": "3.9 Dropdown summaries\n\n\nYou can hide additional information in a dropdown menu\n\nHere’s more words that are hidden.",
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
     "crumbs": [
       "Second Section",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>New Chapter</span>"
@@ -250,7 +350,11 @@
   {
     "objectID": "third-section-new-chapter.html",
     "href": "third-section-new-chapter.html",
+<<<<<<< HEAD
     "title": "\n4  New Chapter\n",
+=======
+    "title": "4  New Chapter",
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
     "section": "",
     "text": "4.1 Learning Objectives\nEvery chapter also needs Learning Objectives.",
     "crumbs": [
@@ -261,8 +365,13 @@
   {
     "objectID": "third-section-new-chapter.html#libraries",
     "href": "third-section-new-chapter.html#libraries",
+<<<<<<< HEAD
     "title": "\n4  New Chapter\n",
     "section": "\n4.2 Libraries",
+=======
+    "title": "4  New Chapter",
+    "section": "4.2 Libraries",
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
     "text": "4.2 Libraries\nFor this chapter, we’ll need the following packages attached:\n*Remember to add any additional packages you need to your course’s own docker image.\n\nlibrary(magrittr)",
     "crumbs": [
       "Third Section",
@@ -272,8 +381,13 @@
   {
     "objectID": "third-section-new-chapter.html#topic-of-section",
     "href": "third-section-new-chapter.html#topic-of-section",
+<<<<<<< HEAD
     "title": "\n4  New Chapter\n",
     "section": "\n4.3 Topic of Section",
+=======
+    "title": "4  New Chapter",
+    "section": "4.3 Topic of Section",
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
     "text": "4.3 Topic of Section\nYou can write all your text in sections like this, using ## to indicate a new header. you can use additional pound symbols to create lower levels of headers.\nSee here for additional general information about how you can format text within R Markdown files. In addition, see here for more in depth and advanced options.\n\n4.3.1 Subtopic\nHere’s a subheading (using three pound symbols) and some text in this subsection!",
     "crumbs": [
       "Third Section",
@@ -283,9 +397,15 @@
   {
     "objectID": "third-section-new-chapter.html#code-examples",
     "href": "third-section-new-chapter.html#code-examples",
+<<<<<<< HEAD
     "title": "\n4  New Chapter\n",
     "section": "\n4.4 Code examples",
     "text": "4.4 Code examples\nYou can demonstrate code like this:\n\noutput_dir &lt;- file.path(\"resources\", \"code_output\")\nif (!dir.exists(output_dir)) {\n  dir.create(output_dir)\n}\n\nAnd make plots too:\n\nhist_plot &lt;- hist(iris$Sepal.Length)\n\n\n\n\n\n\n\nYou can also save these plots to file:\n\npng(file.path(output_dir, \"test_plot.png\"))\nhist_plot\n\n$breaks\n[1] 4.0 4.5 5.0 5.5 6.0 6.5 7.0 7.5 8.0\n\n$counts\n[1]  5 27 27 30 31 18  6  6\n\n$density\n[1] 0.06666667 0.36000000 0.36000000 0.40000000 0.41333333 0.24000000 0.08000000\n[8] 0.08000000\n\n$mids\n[1] 4.25 4.75 5.25 5.75 6.25 6.75 7.25 7.75\n\n$xname\n[1] \"iris$Sepal.Length\"\n\n$equidist\n[1] TRUE\n\nattr(,\"class\")\n[1] \"histogram\"\n\ndev.off()\n\nquartz_off_screen \n                2",
+=======
+    "title": "4  New Chapter",
+    "section": "4.4 Code examples",
+    "text": "4.4 Code examples\nYou can demonstrate code like this:\n\noutput_dir &lt;- file.path(\"resources\", \"code_output\")\nif (!dir.exists(output_dir)) {\n  dir.create(output_dir)\n}\n\nAnd make plots too:\n\nhist_plot &lt;- hist(iris$Sepal.Length)\n\n\n\n\n\n\n\n\nYou can also save these plots to file:\n\npng(file.path(output_dir, \"test_plot.png\"))\nhist_plot\n\n$breaks\n[1] 4.0 4.5 5.0 5.5 6.0 6.5 7.0 7.5 8.0\n\n$counts\n[1]  5 27 27 30 31 18  6  6\n\n$density\n[1] 0.06666667 0.36000000 0.36000000 0.40000000 0.41333333 0.24000000 0.08000000\n[8] 0.08000000\n\n$mids\n[1] 4.25 4.75 5.25 5.75 6.25 6.75 7.25 7.75\n\n$xname\n[1] \"iris$Sepal.Length\"\n\n$equidist\n[1] TRUE\n\nattr(,\"class\")\n[1] \"histogram\"\n\ndev.off()\n\npng \n  2",
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
     "crumbs": [
       "Third Section",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>New Chapter</span>"
@@ -294,9 +414,15 @@
   {
     "objectID": "third-section-new-chapter.html#image-example",
     "href": "third-section-new-chapter.html#image-example",
+<<<<<<< HEAD
     "title": "\n4  New Chapter\n",
     "section": "\n4.5 Image example",
     "text": "4.5 Image example\nHow to include a Google slide. It’s simplest to use the ottrpal package:\n\n\n\n\n\n\n\n\nBut if you have the slide or some other image locally downloaded you can also use HTML like this:",
+=======
+    "title": "4  New Chapter",
+    "section": "4.5 Image example",
+    "text": "4.5 Image example\nHow to include a Google slide. It’s simplest to use the ottrpal package:\n\n\n\n\n\n\n\n\n\nBut if you have the slide or some other image locally downloaded you can also use HTML like this:",
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
     "crumbs": [
       "Third Section",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>New Chapter</span>"
@@ -305,9 +431,15 @@
   {
     "objectID": "third-section-new-chapter.html#video-examples",
     "href": "third-section-new-chapter.html#video-examples",
+<<<<<<< HEAD
     "title": "\n4  New Chapter\n",
     "section": "\n4.6 Video examples",
     "text": "4.6 Video examples\nYou may also want to embed videos in your course. If alternatively, you just want to include a link you can do so like this:\nCheck out this link to a video using markdown syntax.\n\n4.6.1 Using knitr\n\nTo embed videos in your course, you can use knitr::include_url() like this: Note that you should use echo=FALSE in the code chunk because we don’t want the code part of this to show up. If you are unfamiliar with how R Markdown code chunks work, read this.\n\n\n\n\n\n4.6.2 Using HTML\n\n\n\n4.6.3 Using knitr\n\n\n\n\n\n\n4.6.4 Using HTML",
+=======
+    "title": "4  New Chapter",
+    "section": "4.6 Video examples",
+    "text": "4.6 Video examples\nYou may also want to embed videos in your course. If alternatively, you just want to include a link you can do so like this:\nCheck out this link to a video using markdown syntax.\n\n4.6.1 Using knitr\nTo embed videos in your course, you can use knitr::include_url() like this: Note that you should use echo=FALSE in the code chunk because we don’t want the code part of this to show up. If you are unfamiliar with how R Markdown code chunks work, read this.\n\n\nhttps://www.youtube.com/embed/VOCYL-FNbr0400pxhttps://www.youtube.com/embed/VOCYL-FNbr0\n\n\n\n\n4.6.2 Using HTML\n\n\n\n\n4.6.3 Using knitr\n\n\nhttps://drive.google.com/file/d/1mm72K4V7fqpgAfWkr6b7HTZrc3f-T6AV/preview400pxhttps://drive.google.com/file/d/1mm72K4V7fqpgAfWkr6b7HTZrc3f-T6AV/preview\n\n\n\n\n4.6.4 Using HTML",
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
     "crumbs": [
       "Third Section",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>New Chapter</span>"
@@ -316,9 +448,15 @@
   {
     "objectID": "third-section-new-chapter.html#website-examples",
     "href": "third-section-new-chapter.html#website-examples",
+<<<<<<< HEAD
     "title": "\n4  New Chapter\n",
     "section": "\n4.7 Website Examples",
     "text": "4.7 Website Examples\nYet again you can use a link to a website like so:\nA Website\nYou might want to have users open a website in a new tab by default, especially if they need to reference both the course and a resource at once.\nA Website\nOr, you can embed some websites.\n\n4.7.1 Using knitr\n\nThis works:\n\n\n\n\n\n4.7.2 Using HTML",
+=======
+    "title": "4  New Chapter",
+    "section": "4.7 Website Examples",
+    "text": "4.7 Website Examples\nYet again you can use a link to a website like so:\nA Website\nYou might want to have users open a website in a new tab by default, especially if they need to reference both the course and a resource at once.\nA Website\nOr, you can embed some websites.\n\n4.7.1 Using knitr\nThis works:\n\n\nhttps://yihui.org400pxhttps://yihui.org\n\n\n\n\n4.7.2 Using HTML",
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
     "crumbs": [
       "Third Section",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>New Chapter</span>"
@@ -327,9 +465,15 @@
   {
     "objectID": "third-section-new-chapter.html#stylized-boxes",
     "href": "third-section-new-chapter.html#stylized-boxes",
+<<<<<<< HEAD
     "title": "\n4  New Chapter\n",
     "section": "\n4.8 Stylized boxes",
     "text": "4.8 Stylized boxes\nOccasionally, you might find it useful to emphasize a particular piece of information. To help you do so, we have provided css code and images (no need for you to worry about that!) to create the following stylized boxes.\nYou can use these boxes in your course with either of two options: using HTML code or Pandoc syntax.\n\n4.8.1 Using rmarkdown container syntax\nThe rmarkdown package allows for a different syntax to be converted to the HTML that you just saw and also allows for conversion to LaTeX. See the Bookdown documentation for more information. Note that Bookdown uses Pandoc.\n::: {.notice}\nNote using rmarkdown syntax.\n\n:::\n\nNote using rmarkdown syntax.\n\nAs an example you might do something like this:\n\nPlease click on the subsection headers in the left hand navigation bar (e.g., 2.1, 4.3) a second time to expand the table of contents and enable the scroll_highlight feature (see more)\n\n\n4.8.2 Using HTML\nTo add a warning box like the following use:\n\nFollowed by the text you want inside\n\nThis will create the following:\n\nFollowed by the text you want inside\n\nHere is a &lt;div class = \"warning\"&gt; box:\n\nNote text\n\nHere is a &lt;div class = \"github\"&gt; box:\n\nGitHub text\n\nHere is a &lt;div class = \"dictionary\"&gt; box:\n\ndictionary text\n\nHere is a &lt;div class = \"reflection\"&gt; box:\n\nreflection text\n\nHere is a &lt;div class = \"wip\"&gt; box:\n\nWork in Progress text",
+=======
+    "title": "4  New Chapter",
+    "section": "4.8 Stylized boxes",
+    "text": "4.8 Stylized boxes\nOccasionally, you might find it useful to emphasize a particular piece of information. To help you do so, we have provided css code and images (no need for you to worry about that!) to create the following stylized boxes.\nYou can use these boxes in your course with either of two options: using HTML code or Pandoc syntax.\n\n4.8.1 Using rmarkdown container syntax\nThe rmarkdown package allows for a different syntax to be converted to the HTML that you just saw and also allows for conversion to LaTeX. See the Bookdown documentation for more information. Note that Bookdown uses Pandoc.\n::: {.notice}\nNote using rmarkdown syntax.\n\n:::\n\nNote using rmarkdown syntax.\n\nAs an example you might do something like this:\n\nPlease click on the subsection headers in the left hand navigation bar (e.g., 2.1, 4.3) a second time to expand the table of contents and enable the scroll_highlight feature (see more)\n\n\n\n4.8.2 Using HTML\nTo add a warning box like the following use:\n\nFollowed by the text you want inside\n\nThis will create the following:\n\nFollowed by the text you want inside\n\nHere is a &lt;div class = \"warning\"&gt; box:\n\nNote text\n\nHere is a &lt;div class = \"github\"&gt; box:\n\nGitHub text\n\nHere is a &lt;div class = \"dictionary\"&gt; box:\n\ndictionary text\n\nHere is a &lt;div class = \"reflection\"&gt; box:\n\nreflection text\n\nHere is a &lt;div class = \"wip\"&gt; box:\n\nWork in Progress text",
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
     "crumbs": [
       "Third Section",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>New Chapter</span>"
@@ -338,9 +482,15 @@
   {
     "objectID": "third-section-new-chapter.html#dropdown-summaries",
     "href": "third-section-new-chapter.html#dropdown-summaries",
+<<<<<<< HEAD
     "title": "\n4  New Chapter\n",
     "section": "\n4.9 Dropdown summaries",
     "text": "4.9 Dropdown summaries\n\nYou can hide additional information in a dropdown menu\n\nHere’s more words that are hidden.",
+=======
+    "title": "4  New Chapter",
+    "section": "4.9 Dropdown summaries",
+    "text": "4.9 Dropdown summaries\n\n\nYou can hide additional information in a dropdown menu\n\nHere’s more words that are hidden.",
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
     "crumbs": [
       "Third Section",
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>New Chapter</span>"

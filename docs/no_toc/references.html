@@ -2,12 +2,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
+<<<<<<< HEAD
 <meta name="generator" content="quarto-1.5.29">
+=======
+<meta name="generator" content="quarto-1.4.553">
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
+<<<<<<< HEAD
 <title>Quarto Based OTTR Course – References</title>
+=======
+<title>Quarto Based OTTR Course - References</title>
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -147,7 +155,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
     return false;
   }
+<<<<<<< HEAD
   const onCopySuccess = function(e) {
+=======
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
     // button target
     const button = e.trigger;
     // don't keep focus
@@ -179,6 +202,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }, 1000);
     // clear code selection
     e.clearSelection();
+<<<<<<< HEAD
   }
   const getTextToCopy = function(trigger) {
       const codeEl = trigger.previousElementSibling.cloneNode(true);
@@ -202,6 +226,9 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     });
     clipboardModal.on('success', onCopySuccess);
   }
+=======
+  });
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
       var filterRegex = new RegExp('/' + window.location.host + '/');
@@ -209,7 +236,11 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
     }
     // Inspect non-navigation links and adorn them if external
+<<<<<<< HEAD
  	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+=======
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+>>>>>>> 40a1b900b6ea66f083e46cc50cd87c3e772ed000
     for (var i=0; i<links.length; i++) {
       const link = links[i];
       if (!isInternal(link.href)) {
