@@ -24,8 +24,8 @@ jobs:
       rendering_docker_image: "${{ env.RENDERING_DOCKER_IMAGE }}"
       
   clean-docs:
-    runs-on: ubuntu-latest
     needs: yaml-check
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
