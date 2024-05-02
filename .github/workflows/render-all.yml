@@ -25,9 +25,7 @@ jobs:
     outputs:
       toggle_coursera: "${{ env.RENDER_COURSERA }}"
       toggle_leanpub: "${{ env.RENDER_LEANPUB }}"
-      make_book_txt: "${{ env.MAKE_BOOK_TXT }}"
       rendering_docker_image: "${{ env.RENDERING_DOCKER_IMAGE }}"
-      toggle_quiz_check: "${{ env.CHECK_QUIZZES }}"
 
   render-quarto-book:
     name: Render Quarto Book
@@ -49,19 +47,6 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
 
-      # We want a fresh run of the renders each time
-      - name: Delete old docs/*
-        run: rm -rf docs/*
-      
-       # Commit the rendered files inside docs/
-      - name: Commit empty docs folder
-        env:
-          GH_PAT: ${{ secrets.GH_PAT }}
-        run: |
-          git remote set-url origin https://${GH_PAT}@github.com/${GITHUB_REPOSITORY}
-          git add --force docs/
-          git commit -m 'Empty docs folder' || echo "No changes to commit"
-          git push -u origin main  || echo "No changes to push"
 
       # Run quarto::quarto_render()
       - name: Run quarto render
@@ -109,9 +94,6 @@ jobs:
           git config --global --add safe.directory $GITHUB_WORKSPACE
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-        
-      - name: Create docs/no_toc directory
-        run: mkdir -p docs/no_toc 
 
       # Rendered content for Leanpub and Coursera is similar.
       # This job creates a shared scaffold for both.
