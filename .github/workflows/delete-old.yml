@@ -15,7 +15,9 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Delete all files inside docs
-        run: rm -rf docs/*
+        run: |
+          rm -rf docs/*
+          mkdir docs
 
       - name: Commit changes
         run: |
