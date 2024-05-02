@@ -2,6 +2,8 @@ name: Render All Output
 
 on:
   workflow_dispatch:
+  repository_dispatch:
+    types: [docs-cleaned]
   push:
     branches: [ main, staging ]
     paths:
@@ -9,10 +11,10 @@ on:
       - '!docs/*'
 
 jobs:
-
   yaml-check:
     name: Load user automation choices
     runs-on: ubuntu-latest
+    needs: clean-docs
     steps:
       - name: Checkout
         uses: actions/checkout@v4

@@ -2,6 +2,8 @@ name: Clean Docs Directory
 
 on:
   workflow_dispatch:
+  push:
+    branches: [ main, staging ]
 
 jobs:
   clean-docs:
@@ -22,3 +24,11 @@ jobs:
           git add docs/
           git commit -m "Cleaned up docs directory" || echo "No changes to commit"
           git push
+          
+      - name: Trigger Next Workflow
+        run: |
+          curl -X POST \
+          -H "Accept: application/vnd.github.v3+json" \
+          -H "Authorization: token ${{ secrets.GH_PAT }}" \
+          https://api.github.com/repos/${{ github.repository }}/dispatches \
+          -d '{"event_type": "docs-cleaned"}'
