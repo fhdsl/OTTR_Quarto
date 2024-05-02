@@ -2,14 +2,9 @@ name: Render All Output
 
 on:
   workflow_dispatch:
-  repository_dispatch:
-    types: [docs-cleaned]
   push:
     branches: [ main, staging ]
-    paths:
-      - '*.qmd'
-      - '!docs/*'
-
+  
 jobs:
   yaml-check:
     name: Load user automation choices
@@ -27,10 +22,30 @@ jobs:
       toggle_coursera: "${{ env.RENDER_COURSERA }}"
       toggle_leanpub: "${{ env.RENDER_LEANPUB }}"
       rendering_docker_image: "${{ env.RENDERING_DOCKER_IMAGE }}"
+      
+  clean-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Delete all files inside docs
+        run: |
+          rm -rf docs/*
+          mkdir -p docs
+
+      - name: Commit changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add docs/
+          git commit -m "Cleaned up docs directory" || echo "No changes to commit"
+          git push
+
 
   render-quarto-book:
     name: Render Quarto Book
-    needs: yaml-check
+    needs: clean-docs
     runs-on: ubuntu-latest
     container:
       image: ${{needs.yaml-check.outputs.rendering_docker_image}}
@@ -77,7 +92,7 @@ jobs:
 
   render-tocless:
     name: Render TOC-less version for Leanpub or Coursera
-    needs: [yaml-check, render-quarto-book]
+    needs: render-quarto-book
     runs-on: ubuntu-latest
     container:
       image: ${{needs.yaml-check.outputs.rendering_docker_image}}
