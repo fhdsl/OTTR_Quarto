@@ -17,7 +17,7 @@ jobs:
       - name: Delete all files inside docs
         run: |
           rm -rf docs/*
-          mkdir docs
+          mkdir -p docs
 
       - name: Commit changes
         run: |
