@@ -1,0 +1,27 @@
+name: Clean Docs Directory
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+      - staging
+
+jobs:
+  clean-docs:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Delete files in docs except no_toc
+        run: |
+          find docs -mindepth 1 ! -regex '^docs/no_toc.*' -delete
+
+      - name: Commit changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add docs/
+          git commit -m "Cleaned up docs directory" || echo "No changes to commit"
+          git push
