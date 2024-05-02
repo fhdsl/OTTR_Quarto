@@ -42,8 +42,6 @@ jobs:
           git add docs/
           git commit -m "Cleaned up docs directory" || echo "No changes to commit"
           git push
-          echo ${{needs.yaml-check.outputs.rendering_docker_image}}
-
 
   render-quarto-book:
     name: Render Quarto Book
@@ -64,6 +62,7 @@ jobs:
           git config --global --add safe.directory $GITHUB_WORKSPACE
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          echo ${{needs.yaml-check.outputs.rendering_docker_image}}
 
 
       # Run quarto::quarto_render()
