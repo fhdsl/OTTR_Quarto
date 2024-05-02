@@ -5,7 +5,7 @@ on:
 
 jobs:
   yaml-check:
-    name: Load user automation choices
+    name: Load User Automation Choices
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -22,6 +22,7 @@ jobs:
       rendering_docker_image: "${{ env.RENDERING_DOCKER_IMAGE }}"
 
   clean-docs:
+    name: Clean docs folder
     needs: yaml-check
     runs-on: ubuntu-latest
     steps:
@@ -89,7 +90,7 @@ jobs:
           git push -u origin main  || echo "No changes to push"
 
   render-tocless:
-    name: Render TOC-less version for Leanpub or Coursera
+    name: Render TOC-less Quarto Book
     needs: [yaml-check, clean-docs, render-quarto-book]
     runs-on: ubuntu-latest
     container:
