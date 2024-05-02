@@ -41,6 +41,7 @@ jobs:
           git add docs/
           git commit -m "Cleaned up docs directory" || echo "No changes to commit"
           git push
+          echo ${{needs.yaml-check.outputs.rendering_docker_image}}
 
 
   render-quarto-book:
@@ -49,7 +50,7 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ${{needs.yaml-check.outputs.rendering_docker_image}}
-
+    
     steps:
       - name: checkout
         uses: actions/checkout@v4
