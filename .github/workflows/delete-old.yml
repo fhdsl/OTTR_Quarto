@@ -14,9 +14,8 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Delete files in docs except no_toc
-        run: |
-          find docs -mindepth 1 ! -regex '^docs/no_toc.*' -delete
+      - name: Delete all files inside docs
+        run: rm -rf docs/*
 
       - name: Commit changes
         run: |
