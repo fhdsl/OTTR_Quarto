@@ -2,10 +2,6 @@ name: Clean Docs Directory
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-      - staging
 
 jobs:
   clean-docs:
