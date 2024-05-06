@@ -2,6 +2,11 @@ name: Render All Output
 
 on:
   workflow_dispatch:
+  push:
+    branches: [ main ]
+    paths:
+      - '**/*.qmd'
+      - !docs/*
 
 jobs:
   yaml-check:
