@@ -3,8 +3,8 @@ project:
   output-dir: docs
 
 book:
-  title: "Quarto Based OTTR Course"
-  author: "Howard Baek"
+  title: Quarto Based OTTR Course
+  author: Howard Baek
   date: "4/3/2024"
   favicon: img/favicon.ico
   bread-crumbs: false
@@ -46,8 +46,9 @@ book:
     right: 
       - icon: github
         href: https://github.com/
-      - icon: twitter
-        href: https://twitter.com/
+      - icon: slack
+        href: https://fhdata.slack.com/join/signup#/domain-signup
+
       
 
 bibliography: references.bib
