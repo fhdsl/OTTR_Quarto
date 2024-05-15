@@ -15,7 +15,7 @@ docker-test: no
 
 ##### Renderings run upon merge to main branch #####
 # Rendering each platform's content
-render-bookdown: yes
+render-website: quarto
 render-leanpub: yes
 render-coursera: no
 
