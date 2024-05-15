@@ -39,7 +39,7 @@ jobs:
           branch_name='preview-${{ github.event.pull_request.number }}'
           echo branch doesnt exist
           git checkout -b $branch_name || echo branch exists
-          git push --set-upstream origin $branch_name || echo echo branch exists remotely
+          git push --set-upstream origin $branch_name || echo branch exists remotely
         shell: bash
 
 
@@ -102,7 +102,7 @@ jobs:
           fetch-depth: 0
 
       - name: Run styler
-        run: Rscript -e "styler::style_file(list.files(pattern = 'Rmd$', recursive = TRUE, full.names = TRUE));warnings()"
+        run: Rscript -e "styler::style_file(list.files(pattern = 'md$', recursive = FALSE, full.names = TRUE));warnings()"
 
       - name: Commit styled files
         run: |
