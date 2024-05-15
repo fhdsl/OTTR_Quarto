@@ -35,8 +35,8 @@ jobs:
       rendering_docker_image: "${{ env.RENDERING_DOCKER_IMAGE }}"
       toggle_quiz_check: "${{ env.CHECK_QUIZZES }}"
 
-  render-bookdown:
-    name: Render bookdown
+  render-course:
+    name: Render course preview
     needs: yaml-check
     runs-on: ubuntu-latest
     container:
@@ -80,8 +80,8 @@ jobs:
           echo Bookdown status ${{steps.bookdown.outcome}}
           exit 1
 
-      # Commit the rendered bookdown files
-      - name: Commit rendered bookdown files
+      # Commit the rendered course files
+      - name: Commit rendered course files
         env:
           GH_PAT: ${{ secrets.GH_PAT }}
         run: |
@@ -243,7 +243,7 @@ jobs:
         id: coursera
         run: Rscript -e "ottrpal::convert_coursera_quizzes()"
 
-      # Commit the rendered bookdown files
+      # Commit the rendered files
       # Only commit coursera quizzes if the directory is present
       - name: Commit rendered Coursera files
         env:
