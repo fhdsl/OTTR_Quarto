@@ -11,7 +11,7 @@ book:
 
   page-navigation: true
   search: true
-  repo-url: https://github.com/fhdsl/ottr
+  repo-url: https://github.com/fhdsl/OTTR_Quarto
   repo-actions: [edit] 
   issue-url: https://docs.google.com/forms/d/e/1FAIpQLSfBvVELBg8lcynKj0TrzMlov1zil-Sbkh9VhMKRcSpeo1xo6g/viewform
   
@@ -38,7 +38,7 @@ book:
   page-footer:
     left: |
       This book was built with <a href="https://quarto.org/" style="color: #fff;">Quarto</a> using 
-      <a href="https://github.com/fhdsl/ottr" style="color: #fff;">OTTR</a>.
+      <a href="https://github.com/fhdsl/OTTR_Quarto" style="color: #fff;">OTTR</a>.
     center: |
       All illustrations <a href="https://creativecommons.org/licenses/by/4.0/" style="color: #fff;">CC-BY. </a>
       <br>
