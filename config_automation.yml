@@ -13,7 +13,7 @@ style-code: yes
 # Test build the docker image if any docker-relevant files have been changed
 docker-test: no
 # Do we need to make the book txt file automatically? 
-make_book_txt: yes
+make_book_txt: TRUE
 
 ##### Renderings run upon merge to main branch #####
 # Rendering each platform's content
