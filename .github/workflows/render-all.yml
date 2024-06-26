@@ -58,7 +58,7 @@ jobs:
       - name: Delete old docs/*
         run: rm -rf docs/*
 
-      # Run bookdown rendering
+      # Run Rmd rendering
       - name: Run bookdown render
         id: bookdown
         if: ${{needs.yaml-check.outputs.toggle_website == 'rmd' }}
@@ -67,7 +67,7 @@ jobs:
           file.copy(from = 'assets', to = 'docs/assets', overwrite = TRUE)"
 
       - name: Render quarto version
-        id: tocless_quarto
+        id: quarto
         if: ${{needs.yaml-check.outputs.toggle_website == 'quarto' }}
         run: Rscript -e "quarto::quarto_render('.')"
 
@@ -97,7 +97,7 @@ jobs:
           git remote set-url origin https://${GH_PAT}@github.com/${GITHUB_REPOSITORY}
           git fetch origin
           git add --force docs/*
-          git commit -m 'Render bookdown' || echo "No changes to commit"
+          git commit -m 'Render course' || echo "No changes to commit"
           git pull --rebase --allow-unrelated-histories --strategy-option=ours
           git push -u origin main  || echo "No changes to push"
 
