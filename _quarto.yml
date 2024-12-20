@@ -4,8 +4,6 @@ project:
 
 book:
   title: Quarto Based OTTR Course
-  author: Howard Baek
-  date: "4/3/2024"
   favicon: img/favicon.ico
   bread-crumbs: false
 
@@ -24,9 +22,6 @@ book:
     - part: "Second Section"
       chapters:
         - second-section-new-chapter.qmd
-    - part: "Third Section"
-      chapters:
-        - third-section-new-chapter.qmd
     - conclusion.qmd
     - references.qmd
   

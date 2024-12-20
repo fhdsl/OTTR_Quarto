@@ -1,8 +1,30 @@
-# New Chapter
+
+# A new chapter
+
+If you haven't yet read the getting started Wiki pages; [start there](https://www.ottrproject.org/getting_started.html).
+
+To see the rendered version of this chapter and the rest of the template, see here: https://jhudatascience.org/OTTR_Template/.
+
+Every chapter needs to start out with this chunk of code:
+
+
+```{r, echo=FALSE, fig.alt='I can determine if a DMS plan is required using the table here: https://sharing.nih.gov/sites/default/files/List-of-Activity-Codes-Applicable-to-DMS-Policy.pdf', out.width = '100%', fig.align = 'center'}
+
+```
+
+
+```{r, include = FALSE}
+ottrpal::set_knitr_image_path()
+```
 
 ## Learning Objectives
 
-Every chapter also needs Learning objectives.
+Every chapter also needs Learning objectives that will look like this:  
+
+This chapter will cover:  
+
+- {You can use https://tips.uark.edu/using-blooms-taxonomy/ to define some learning objectives here}
+- {Another learning objective}
 
 ## Libraries
 
@@ -49,26 +71,20 @@ hist_plot
 dev.off()
 ```
 
-
 ## Image example
 
 How to include a Google slide. It's simplest to use the `ottrpal` package:
 
-```{r}
-#| fig-align: "center"
-#| fig-alt: "Major point!! example image"
-#| echo: false
-#| out-width: "100%"
-ottrpal::include_slide("https://docs.google.com/presentation/d/1Dw_rBb1hySN_76xh9-x5J2dWF_das9BAUjQigf2fN-E/edit#slide=id.g252f18e2576_1_0")
+
+```{r, fig.align='center', out.width="100%", echo = FALSE, fig.alt= "Major point!! example image"}
+ottrpal::include_slide("https://docs.google.com/presentation/d/1YmwKdIy9BeQ3EShgZhvtb3MgR8P6iDX4DfFD65W_gdQ/edit#slide=id.gcc4fbee202_0_141")
 ```
 
-But if you have the slide or some other image locally downloaded you can also use HTML like this: 
+But if you have the slide or some other image locally downloaded you can also use HTML like this:
 
-<img src="resources/images/figure/1YmwKdIy9BeQ3EShgZhvtb3MgR8P6iDX4DfFD65W_gdQ_gcc4fbee202_0_141.png" title="Major point!! example image" alt="Major point!! example image" style="display: block; margin: auto; max-width: 100%; height: auto;" />
-
+<img src="resources/images/02-chapter_of_course_files/figure-html//1YmwKdIy9BeQ3EShgZhvtb3MgR8P6iDX4DfFD65W_gdQ_gcc4fbee202_0_141.png" title="Major point!! example image" alt="Major point!! example image" style="display: block; margin: auto;" />
 
 ## Video examples
-
 You may also want to embed videos in your course. If alternatively, you just want to include a link you can do so like this:
 
 Check out this [link to a video](https://www.youtube.com/embed/VOCYL-FNbr0) using markdown syntax.
@@ -79,8 +95,7 @@ To embed videos in your course, you can use `knitr::include_url()` like this:
 Note that you should use `echo=FALSE` in the code chunk because we don't want the code part of this to show up. If you are unfamiliar with [how R Markdown code chunks work, read this](https://rmarkdown.rstudio.com/lesson-3.html).
 
 
-```{r}
-#| echo: false
+```{r, echo=FALSE}
 knitr::include_url("https://www.youtube.com/embed/VOCYL-FNbr0")
 ```
 
@@ -121,8 +136,23 @@ knitr::include_url("https://yihui.org")
 
 ### Using HTML
 
-<iframe src="https://yihui.org" width="672px" height="400px"></iframe>
+<iframe src="https://yihui.org" width="672" height="400px"></iframe>
 
+
+If you'd like the URL to show up in a new tab you can do this:
+
+```
+<a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+```
+
+## Citation examples
+
+We can put citations at the end of a sentence like this [@rmarkdown2021].
+Or multiple citations [@rmarkdown2021, @Xie2018].
+
+but they need a ; separator [@rmarkdown2021; @Xie2018].
+
+In text, we can put citations like this @rmarkdown2021.
 
 ## Stylized boxes
 
@@ -132,7 +162,7 @@ You can use these boxes in your course with either of two options: using HTML co
 
 ### Using `rmarkdown` container syntax
 
-The `rmarkdown` package allows for a different syntax to be converted to the HTML that you just saw and also allows for conversion to LaTeX. See the [Bookdown](https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html) documentation for more information. Note that Bookdown uses Pandoc.
+The `rmarkdown` package allows for a different syntax to be converted to the HTML that you just saw and also allows for conversion to LaTeX. See the [Bookdown](https://bookdown.org/yihui/rmarkdown-cookbook/custom-blocks.html) documentation for more information [@Xie2020]. Note that Bookdown uses Pandoc.
 
 
 ```
@@ -161,9 +191,11 @@ table of contents and enable the `scroll_highlight` feature
 
 To add a warning box like the following use:
 
+```
 <div class = "notice">
 Followed by the text you want inside
 </div>
+```
 
 This will create the following:
 
@@ -222,3 +254,13 @@ Work in Progress text
 <details><summary> You can hide additional information in a dropdown menu </summary>
 Here's more words that are hidden.
 </details>
+
+## Print out session info
+
+You should print out session info when you have code for [reproducibility purposes](https://jhudatascience.org/Reproducibility_in_Cancer_Informatics/managing-package-versions.html).
+
+```{r}
+devtools::session_info()
+```
+
+[many links]: https://github.com/jhudsl/OTTR_Template
